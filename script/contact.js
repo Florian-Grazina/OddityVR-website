@@ -2,6 +2,7 @@
 // FORM
 // ----------------------------------------------------
 
+
 const formName = document.querySelector("#contactform-name");
 formName.addEventListener('blur', CheckFieldBlur);
 
@@ -20,14 +21,10 @@ formMessage.addEventListener('blur', CheckFieldBlur);
 const alertColor = "#c41a1a";
 
 
-function CheckFieldBlur (e)
-{
-    if (!e.target.value)
-    {
+function CheckFieldBlur(e) {
+    if (!e.target.value) {
         e.target.style.borderBottomColor = alertColor;
-    }
-    else
-    {
+    } else {
         e.target.style.borderBottomColor = "";
     }
 }
@@ -36,13 +33,10 @@ function CheckFieldBlur (e)
 function ValidateEmailBlur(e) {
 
     var validRegex = /^[a-zA-Z0-9-.]+@[a-zA-Z0-9-.]+\.[a-zA-Z0-9-]*$/;
-  
-    if (!e.target.value.match(validRegex))
-    {
+
+    if (!e.target.value.match(validRegex)) {
         e.target.style.borderBottomColor = alertColor;
-    }
-    else
-    {
+    } else {
         e.target.style.borderBottomColor = "";
     }
 }
@@ -56,10 +50,8 @@ function ValidateEmailBlur(e) {
 const buttonSubmit = document.querySelector("#contactform-submit");
 buttonSubmit.addEventListener('click', CheckAll);
 
-function CheckSend (field)
-{
-    if (!field.value)
-    {
+function CheckSend(field) {
+    if (!field.value) {
         field.style.borderBottomColor = alertColor;
         return false;
     }
@@ -67,12 +59,10 @@ function CheckSend (field)
 }
 
 
-function CheckEmailSend (field)
-{
+function CheckEmailSend(field) {
     var validRegex = /^[a-zA-Z0-9]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]*$/;
 
-    if (!field.value.match(validRegex))
-    {
+    if (!field.value.match(validRegex)) {
         field.style.borderBottomColor = alertColor;
         return false;
     }
@@ -80,18 +70,17 @@ function CheckEmailSend (field)
 }
 
 
-function CheckAll(e)
-{
-    e.preventDefault();
+function CheckAll(e) {
     let listOfChecks = [];
+    console.log("checking data");
 
     listOfChecks.push(CheckSend(formName));
     listOfChecks.push(CheckEmailSend(formEmail));
     listOfChecks.push(CheckSend(formPhone));
     listOfChecks.push(CheckSend(formSubject));
     listOfChecks.push(CheckSend(formMessage));
-    
-    if(listOfChecks.every(x => x == true))
+
+    if (listOfChecks.every(x => x == true))
         SubmitData();
 }
 
@@ -100,16 +89,35 @@ function CheckAll(e)
 // SEND DATA
 // ----------------------------------------------------
 
-function SubmitData(){
-    
-    console.log("Sending form");
+const alertSuccess = document.querySelector("#form-success");
+const alertDanger = document.querySelector("#form-danger");
+const loader = document.querySelector("#loader");
+
+function sleep(wait){
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve('resolved');
+        }, wait);
+    });
+}
+
+
+
+async function TriggerAlert(alert){
+    loader.style.visibility = "hidden";
+    alert.style.visibility = "visible";
+    await sleep(8000);
+    alert.style.visibility = "hidden";
+    buttonSubmit.disabled = false;
+}
+
+function SubmitData() {
 
     let name = formName.value;
     let email = formEmail.value;
     let phone = formPhone.value;
     let subject = formSubject.value;
     let message = formMessage.value;
-
 
     let form = {
         "Name" : name,

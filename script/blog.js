@@ -4,6 +4,10 @@
 // --------------------------------------
 
 async function postData(url = "", data = {}) {
+
+    loader.style.visibility = "visible";
+    buttonSubmit.disabled = true;
+
     fetch(url, {
         method: "POST",
         mode: "cors",
@@ -14,12 +18,21 @@ async function postData(url = "", data = {}) {
         referrerPolicy: "no-referrer",
         body: JSON.stringify(data),
     })
-    .then(response => {
-        return response.json()})
 
+    .then(response => {
+        console.log(response);
+        if (response.ok){
+            TriggerAlert(alertSuccess);
+            return response.json();
+        }
+        throw new Error(error);
+    })
     .then(data => {
-        console.log(data);
         return data})
+
+    .catch((error) => {
+        TriggerAlert(alertDanger);
+    })
 }
 
 async function getData(url = "") {
