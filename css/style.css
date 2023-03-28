@@ -1,0 +1,611 @@
+
+
+/***************** Import **********************/
+
+@font-face {
+    font-family: CeraBlack ;
+    src: url("../fonts/CeraProBlack.otf") 
+}
+@font-face {
+    font-family: CeraBlackIt ;
+    src: url("../fonts/CeraProBlackI.otf") 
+}
+@font-face {
+    font-family: CeraBold ;
+    src: url("../fonts/CeraProBold.otf") 
+}
+@font-face {
+    font-family: CeraLight ;
+    src: url("../fonts/CeraProLight.otf") 
+}
+@font-face {
+    font-family: CeraRegularIt ;
+    src: url("../fonts/CeraProReguItalic.otf") 
+}
+@font-face {
+    font-family: CeraMedium ;
+    src: url("../fonts/CeraProMedium.otf") 
+}
+/***************** Fonds **********************/
+
+body {
+    background-image: url("../img/Body.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'CeraLight', sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+#container{
+    background-color: #0000001f;
+}
+
+
+/***************** Mobile **********************/
+
+@media screen and (max-width: 500px){
+
+    body{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 25px;
+        font-family: CeraBold;
+    }
+
+    #container {
+        width: 95vw;
+        height: auto;
+    }
+
+    #modules text-modules{
+        z-index: 1;
+    }
+
+}
+
+hr{
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin: 20px 0 20px 0;
+}
+
+/***************** Polices et Ecriture **********************/
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 35px;
+    font-family: 'CeraBlack', sans-serif;;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.text-orange{
+    color: #E3B984;
+}
+
+.text-pink {
+    color: #FFBBDA;
+}
+
+.text-purple {
+    color: #D3A7F4;
+}
+
+.text-blue {
+    color: #70C1CB;
+}
+
+.text-orange:hover{
+    color: #eccda7;
+}
+
+.text-pink:hover {
+    color: #facde1;
+}
+
+.text-purple:hover {
+    color: #dfc3f5;
+}
+
+.text-blue:hover {
+    color: #acdee3;
+}
+.subtitle-italic{
+    font-style: italic;
+    font-weight: lighter;
+    font-family: 'CeraMedium', sans-serif;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+
+
+/***************** Barre Nav **********************/
+
+#navbar-container{
+    width: 80%;
+    height: 7vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: fixed;
+    z-index: 3;
+    border-radius: 30px;
+    margin: 0;
+}
+
+#navbar-list{
+    width: 55%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+#navbar-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#navbar-list li a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    font-size: 23px;
+    font-family: CeraMedium;
+}
+
+
+/***************** Boutons **********************/
+
+.multicolor-button{ 
+    background-image: url("../img/ButtonBckg.png");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height:50px;
+    border: 3px solid white ; 
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.multicolor-button:hover{
+    box-shadow: none;
+    border: 0.1px solid white;
+}
+
+body:not(.device-touch) .multicolor-button{
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+} 
+
+/***************** Accueil **********************/
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#accueil{
+    width: 100%;
+    height: 100vh;
+}
+#accueil embed{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+}
+
+#slogan{
+    background-color:rgba(0, 0, 0, 0.705);
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    z-index: 1;
+    position: absolute;
+    padding: 30px;
+}
+
+/***************** Modules **********************/
+
+#modules{
+    margin-top: 4vw;
+    display: flex;
+}
+
+#slogan-modules{
+    margin-bottom:3vw;
+}
+
+#scenarios-text{
+    text-align: right;
+}
+
+#scenarios-slogan{
+    margin-bottom: 5vw;
+}
+
+ #reception-resultats{
+    margin-top: 120px;
+}
+
+#reception-image img{
+    padding: 0;
+}
+
+#text-modules{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   width: 60%;
+}
+
+#tableau-softskills{
+    margin: 70px auto;
+}
+#tableau-softskills td{
+    width: 240px;
+    height: 240px;
+    border: 2px solid black;
+    margin: 20px;
+    border-radius: 30px;
+
+}
+
+/***************** Equipe **********************/
+
+.card-container{
+    height: 400px;
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.card-image{
+    background-color: #D3A7F4;
+    width: 100%;
+    height: 90%;
+    margin-bottom: 20px;
+}
+
+
+#slogan-equipe{
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+}
+
+
+/* ----------------------------------------------------------------
+	Blog
+-----------------------------------------------------------------*/
+
+.title-container{
+    padding: 0;
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.entry-title h3 a { color: #333; }
+
+.entry-title h3 a:hover { color: #000000; }
+
+.posts .entry-title h3 {
+	font-size: 1.3rem;
+	letter-spacing: 0;
+}
+
+.entry-title h3 {
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+}
+
+.entry-image img {
+	display: block;
+	position: relative;
+    width: 100%;
+	height: auto;
+}    
+
+.article-container{
+    display: flex;
+    justify-content: center;
+}
+
+.tag{
+    font-size: 20px;
+}
+
+
+/* ----------------------------------------------------------------
+	Documents & Contacts
+-----------------------------------------------------------------*/
+
+#contact{
+	height: 100%;
+	text-align: center
+}
+
+.list-document{
+	height: 17%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 8%;
+    font-size: 22px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+#download-document{
+	height: 100%;
+	width: 50%;
+}
+
+#download-document div{
+	border: #444 2px solid;
+	border-radius: 20px;
+	background-color: #62356d;
+}
+
+#button-document{
+	height: 100%;
+	width: 50%;
+}
+
+/* ----------------------------------------------------------------
+	Forms
+-----------------------------------------------------------------*/
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  	color: rgba(255, 255, 255, 0.6);
+  	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ 	color: rgb(255, 255, 255, 0.6);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ 	color: rgb(255, 255, 255, 0.6);
+}
+
+::-moz-selection { /* Code for Firefox */
+  	color: rgb(255, 255, 255);
+  	background: #535353;
+}
+
+::selection {
+	color: rgb(255, 255, 255);
+	background: rgba#535353;
+}
+
+/* Border Form Design
+---------------------------------------------------------------------------- */
+
+.border-form-control {
+	height: 48px;
+	/* padding: 8px 4px; */
+	font-size: 21px;
+	letter-spacing: 1px;
+	background-color: transparent !important;
+	border-top: transparent !important;
+	border-right: transparent !important;
+	border-left: transparent !important;;
+	border-bottom-width: 1px;
+}
+
+textarea.border-form-control {
+	resize: none;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+.sm-form-control {
+	width: 100%;
+	height: 38px;
+	padding: 8px 14px;
+	font-size: 18px;
+	color: #ffffff;
+	-webkit-transition: border-color ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s;
+	transition: border-color ease-in-out .15s;
+}
+
+.sm-form-control:focus {
+	border-color: #535353;
+	outline: 0;
+}
+
+.sm-form-control { height: auto; }
+
+form p{
+    color: #ffff;
+}
+
+#bloc-message{
+    display: flex;
+}
+
+/* Buttons
+----------------------------------------------------------------------------  */
+
+.button.button-circle { border-radius: 20px; }
+
+.button.button-border {
+	border: 2px solid #ffffff;
+	background-color: #683575;
+	color: #ffffff;
+    /* margin-bottom: 20px; */
+}
+
+.button.button-border:not(.button-fill):hover {
+	background-color: #62356d;
+	color: #FFF;
+	border-color: transparent !important;
+}
+
+.button {
+	margin: 5px;
+	padding: 8px 22px;
+	font-size: 0.875rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+body:not(.device-touch) .button {
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.center { text-align: center !important; }
+
+/* ----------------------------------------------------------------
+	Alerts
+-----------------------------------------------------------------*/
+.alert{
+	top: 40%;
+	opacity: 0.7;
+	position: absolute;
+	width: 100%;
+}
+
+#form-success{
+	visibility: hidden;
+}
+
+#form-danger{
+	visibility: hidden;
+}
+
+#loader-container{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+    border-radius: 50px;
+}
+
+#loader{
+	width: 60px;
+	height: 60px;
+	visibility: hidden;
+}
+
+/* ----------------------------------------------------------------
+	FOOTER
+-----------------------------------------------------------------*/
+
+footer{
+    min-height: 200px;
+    background-color: #303030;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 850px;
+}
+
+#footer-logo{
+    display: flex;
+    align-items: center;
+    min-width: 150px;
+}
+
+#footer-logo img{
+    width: 180px;
+    height: 180px;
+}
+
+#footer-contact{
+    text-align: center;
+    min-width: 400px;
+}
+
+#footer-social-media{
+    min-width: 150px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#footer-social-media div a{
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+
+#facebook{
+    background-image: url(../img/Icon_awesome-facebook-square.png);
+}
+
+#twitter{
+    background-image: url(../img/Icon_awesome-twitter-square.png);
+}
+
+#google{
+    background-image: url(../img/Icon_awesome-google.png);
+}
+
+#linkedin{
+    background-image: url(../img/Icon_awesome-linkedin.png);
+}
+
