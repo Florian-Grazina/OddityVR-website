@@ -18,7 +18,31 @@
       <!-- NAVBAR
       -------------------------------------- -->
       <nav>
+
         <div id="navbar-container">
+
+          <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+              <li><a href="#accueil" class="text-blue">Accueil</a></li>
+                <li><a href="#modules" class="text-purple">Modules</a></li>
+                <li><a href="#blog" class="text-pink">Blog</a></li>
+                <li><a href="#contact" class="text-orange">Contact</a></li>
+                <li><button id="demo-button" class="multicolor-button">Réserver une démo</button></li>
+            </ul>
+          </div>
+
+          <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span class="black"></span>
+              <span class="transparent"></span>
+              <span class="black"></span>
+              <span class="transparent"></span>
+              <span class="black"></span>
+              
+            </span>
+          </a>
+
           <ul id="navbar-list">
             <li><a href="#accueil" class="text-blue">Accueil</a></li>
             <li><a href="#modules" class="text-purple">Modules</a></li>
@@ -404,9 +428,11 @@
     </div>
   </footer>
 
+    <script src="./script/sidenav.js"></script>
     <script src="./script/animation.js"></script>
     <script src="./script/blog.js"></script>
     <script src="./script/contact.js"></script>
+    
 
 </body>
 
