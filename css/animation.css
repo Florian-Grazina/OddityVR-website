@@ -8,6 +8,7 @@
     height: 200px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 70px;
 }
 
 .balloon
@@ -53,6 +54,7 @@
 #bloc-train
 {
     height: 100px;
+    margin-bottom: 100px;
     position: relative;
 }
 
@@ -100,20 +102,17 @@
 
 #bloc-girl
 {
-    width: 40%;
-    position: relative;
+    position: absolute;
+    right: -250px;
 }
 
 #metaverse-girl
 {
     height: 700px;
-    /* width: 100%; */
-
     top: -100px;
-
+    
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
 
     animation-name: girl-float;
     animation-duration: 10s;
