@@ -649,6 +649,7 @@ footer{
 
     #navbar-container{
         background-color: transparent;
+        justify-content: start;
     }
 
     /* Sidenav menu */
@@ -699,6 +700,11 @@ footer{
   }
   
   /* Icône burger */
+
+  .burger-icon span{
+    margin-left: 100px;
+  }
+
   .burger-icon span.black {
     display: block;
     visibility: visible;
