@@ -49,7 +49,7 @@
     animation-duration: 3s;
 }
 
-/* TRAIN */
+/* TRAIN
 
 #bloc-train
 {
@@ -96,20 +96,20 @@
 @keyframes train-hop{
     from{bottom: -10px;}
     to{bottom: -12px;}
-}
+} */
 
 /* MEUF BONNE */
 
 #bloc-girl
 {
     position: absolute;
-    right: -250px;
+    right: -280px;
+    top: 100px;
 }
 
 #metaverse-girl
 {
     height: 700px;
-    top: -100px;
     
     background-size: contain;
     background-repeat: no-repeat;
