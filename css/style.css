@@ -238,6 +238,9 @@ body:not(.device-touch) .multicolor-button{
     z-index: 1;
     position: absolute;
     padding: 20px;
+
+    transition: opacity 2s;
+    opacity: 0;
 }
 
 /***************** Modules **********************/
@@ -290,7 +293,6 @@ body:not(.device-touch) .multicolor-button{
     z-index: 5;
     width: 100%;
     height: 100%;
-
     left: 0;
     top: 0;
     overflow:auto;
