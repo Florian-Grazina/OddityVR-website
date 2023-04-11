@@ -33,11 +33,14 @@ body {
     overflow-x: hidden; /* Hide scrollbars */ 
     background-image: url("../img/Body.png");
     background-repeat: no-repeat;
+    /* background-attachment: fixed; */
     background-size: cover;
     color: white;
     font-family: 'CeraLight', sans-serif;
     font-size: 25px;
     margin: 0;
+
+    background-color: #31bbcb;
 }
 
 #container {
@@ -663,6 +666,8 @@ footer{
 
 /***************** Tablet **********************/
 
+
+/* salu lolo */
 @media screen and (max-width: 950px){
     
     #container {
