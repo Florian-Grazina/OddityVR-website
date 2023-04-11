@@ -13,7 +13,8 @@
 </head>
 
 <body>
-
+  <div id="black-band">
+    <div id="container">
 
       <!-- NAVBAR
       -------------------------------------- -->
@@ -48,13 +49,11 @@
             <li><a href="#modules" class="text-purple">Modules</a></li>
             <li><a href="#blog" class="text-pink">Blog</a></li>
             <li><a href="#contact" class="text-orange">Contact</a></li>
-            <li><button id="demo-button" class="multicolor-button">Réserver une démo</button></li>
           </ul>
+          <a href="#form" type="button" class="multicolor-button">Réserver une démo</a>
         </div>
       </nav>
-
-    <div id="black-band">
-      <div id="container">
+    
 
       <!-- HOME PAGE
       -------------------------------------- -->
@@ -71,15 +70,18 @@
           </p>
         </div>
         <div id="accueil">
-          <!-- <embed src="./img/teasing.mp4" type="video/webm"> -->
+          <embed src="./img/teasing.mp4" type="video/webm">
         </div>
       </div>
 
 
       <!-- MODULES
       -------------------------------------- -->
+
+      <hr id="modules" class="mx-auto d-block">
+
       <section>
-        <div id="modules">
+        <div id="modules-container">
           <div id="text-modules">
             <h2>Faites vivre à vos Collaborateurs <br> Une Experience Unique <br> Qui Valorisera leurs
               Soft Skills :</h2>
@@ -101,29 +103,29 @@
         </div>
         <hr class="mx-auto d-block">
         <h2 id="scenarios-text">12 scénarios, 12 décors complètement <br> déconnectés du monde du travail</h2>
-        <!-- <table id="tableau-softskills">
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table> -->
+
+       
+
+      </section>
+
+
+      <!-- SOFT SKILLS
+      -------------------------------------- -->
+
+      <hr class="mx-auto d-block">
+
+      <section>
+        <div class="row">
+          <h2 class="col" id="scenarios-slogan">15 Soft Skills analysés ! <br><span style="font-size: 30px;" class="subtitle-italic">+ 1 Analyse approfondie <br> pour
+              chaque scénario réalisé</span></h2>
+          <div id="bloc-shooter-game" class="col">
+            <div id="balloon1" class="balloon"></div>
+            <div id="balloon2" class="balloon"></div>
+            <div id="balloon3" class="balloon"></div>
+            <div id="balloon4" class="balloon"></div>
+            <p id="score">0</p>
+          </div>
+        </div>
 
         <div id="table">
           <div class="softskill"></div>
@@ -142,39 +144,21 @@
           <div class="softskill"></div>
           <div class="softskill"></div>
         </div>
-
-      </section>
-
-
-      <!-- RESULTS
-      -------------------------------------- -->
-      <section>
-        <div class="row">
-          <h2 class="col" id="scenarios-slogan">15 Soft Skills analysés ! <br><span style="font-size: 30px;" class="subtitle-italic">+ 1 Analyse approfondie <br> pour
-              chaque scénario réalisé</span></h2>
-          <div id="bloc-shooter-game" class="col">
-            <div id="balloon1" class="balloon"></div>
-            <div id="balloon2" class="balloon"></div>
-            <div id="balloon3" class="balloon"></div>
-            <div id="balloon4" class="balloon"></div>
-            <p id="score">0</p>
-          </div>
-        </div>
         
         <img id="graph" class="mx-auto img-fluid" src="./img/Graphique.png" alt="Soft Skills graphique">
-
+<!-- 
         <div id="bloc-train">
           <div id="train"></div>
           <div id="track"></div>
-        </div>
+        </div> -->
+
+        <hr class="mx-auto d-block">
 
         <div id="reception-results" >
-          <div id="reception-image">
-            <img src="./img/Enveloppe.png" alt="Enveloppe">
-          </div>
+          
           <div id="results-text" class="text-end">
             <h2>Réception immédiate des résultats</h2>
-            <p>
+            <!-- <p>
               Bonne capacité d’analyse et d’observation des détails. Bonne réactivité et de l’enthousiasme dans sa façon
               de
               se comporter. Animé(e) d’une vraie curiosité qui l’amène à s’intéresser à son environnement et à explorer
@@ -183,8 +167,21 @@
               problèmes ou les issues à gérer. Une confiance envers les autres peut-être à renforcer.
               Point de vigilance : attention à ce que cette quête de curiosité ne conduise pas à se mettre en situation de
               risque.
-            </p>
+            </p> -->
           </div>
+
+          <div id="results-image">
+            <img src="./img/Enveloppe.png" alt="Enveloppe">
+            <button id="results-button" >OPEN</button>
+
+            <div id="results-modal">
+              <div id="content-modal">
+                <span class="close">&times;</span>
+              </div>
+            </div>
+
+          </div>
+
         </div>
         
         <hr class="mx-auto d-block">
@@ -214,7 +211,7 @@
       <hr class="mx-auto d-block">
 
 
-      <!-- RESULTS!
+      <!-- TEAM!
     -------------------------------------- -->
       <section>
         <div id="equipe">
@@ -245,11 +242,13 @@
           </p>
         </div>
       </section>
-      <hr class="mx-auto d-block">
 
 
       <!-- BLOG!
-    -------------------------------------- -->
+    ---------------------------------------->
+    
+      <hr id="blog" class="mx-auto d-block">
+
       <section>
         <h2 class="mx-auto">Recently from the Blog</h2>
         <div class="row posts">
@@ -307,16 +306,18 @@
           </div>
         </div>
       </section>
-      <hr class="mx-auto d-block">
 
 
       <!-- DOCUMENTS
       ============================================= -->
+
+      <hr id="contact" class="mx-auto d-block">
+
       <section>
         <h2 class="mx-auto">Contact & Documents</h2>
         <div class="row mb-0" style="height: 100%;">
           <div class="col-md-5 mb-4">
-            <div id="contact">
+            <div id="contact-us">
               <h3>CONTACTEZ NOUS</h3>
               <p>Oddity VR </p>
               <p>03 87 76 18 00 </p>
@@ -353,11 +354,13 @@
           </div>
         </div>
       </section>
-      <hr class="mx-auto d-block">
 
 
       <!-- FORM
       ============================================= -->
+
+      <hr id="form" class="mx-auto d-block">
+
       <section style="position: relative;">
         <h2 class="mx-auto">Formulaire</h2>
         <form class="row mb-0" id="contactform" name="contactform">
@@ -419,10 +422,10 @@
       </div>
       <div id="footer-social-media">
         <div class="row mb-0">
-          <a href="_blank" id="facebook" class="col-3"></a>
-          <a href="_blank" id="twitter" class="col-3"></a>
-          <a href="_blank" id="google" class="col-3"></a>
-          <a href="_blank" id="linkedin" class="col-3"></a>
+          <a href="https://www.facebook.com/people/Oddity-VR/100063989622066/?paipv=0&eav=Afas54osxqAVrXnToRyQATafQIP5U_o95_UKbI5aG9xcA5-5vVPvHSCKTqYMGwUP2P4&_rdr" target="_blank" id="facebook" class="col-3"></a>
+          <a href="https://twitter.com/OddityVr" target="_blank" id="twitter" class="col-3"></a>
+          <a href="https://www.google.com/maps/place/Oddity+VR/@49.1322303,6.2009627,15z/data=!4m6!3m5!1s0x4794df442bafd6c5:0x942d3340490c7b4e!8m2!3d49.1322303!4d6.2009627!16s%2Fg%2F11s_yy0mj0" target="_blank" id="google" class="col-3"></a>
+          <a href="https://www.linkedin.com/company/oddity-vr?originalSubdomain=fr" target="_blank" id="linkedin" class="col-3"></a>
         </div>
       </div>
     </div>
@@ -432,7 +435,8 @@
     <script src="./script/animation.js"></script>
     <script src="./script/blog.js"></script>
     <script src="./script/contact.js"></script>
-    
+    <script src="./script/results.js"></script>
+    <script src="./script/video.js"></script>
 
 </body>
 

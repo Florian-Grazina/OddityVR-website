@@ -32,11 +32,14 @@ body {
     overflow-x: hidden; /* Hide scrollbars */ 
     background-image: url("../img/Body.png");
     background-repeat: no-repeat;
+    /* background-attachment: fixed; */
     background-size: cover;
     color: white;
     font-family: 'CeraLight', sans-serif;
     font-size: 25px;
     margin: 0;
+
+    background-color: #31bbcb;
 }
 
 #container {
@@ -74,23 +77,24 @@ h2{
 
 h3{
     font-size: 27px;
-    font-weight: bolder;
+    font-family: 'CeraBold', sans-serif;
+    margin-bottom: 0px;
 }
 
 .text-orange{
-    color: #E3B984;
+    color: #333;
 }
 
 .text-pink {
-    color: #FFBBDA;
+    color: #333;
 }
 
 .text-purple {
-    color: #D3A7F4;
+    color: #333;
 }
 
 .text-blue {
-    color: #70C1CB;
+    color: #333;
 }
 
 .text-orange:hover{
@@ -129,21 +133,25 @@ nav{
 
 #navbar-container{
     height: 60px;
-    width: 1300px;
+    width: 1150px;
     max-width: 100%;
+
+    top: 35px;
+
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     position: fixed;
     z-index: 3;
-    border-radius: 30px;
+    border-radius: 15px;
     margin: auto;
 }
 
 #navbar-list{
     list-style-type: none;
     display: flex;
+    justify-content: space-between;
     margin: 0;
     padding-bottom: 5px;
     padding-right: 10px;
@@ -155,11 +163,11 @@ nav{
     align-items: center;
     font-size: 23px;
     font-family: CeraMedium;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 80px;
 }
 
 #navbar-list li a{
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -183,17 +191,21 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     width: 250px;
-    height:50px;
-    border: 3px solid white ; 
-    border-radius: 30px;
+    height:70%;
+    margin-right: 10px;
+    border-radius: 12px;
     cursor: pointer;
     box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
     font-weight: bold;
+
+    text-align: center;
+    padding: 6px;
 }
 
 .multicolor-button:hover{
+    color: white;
     box-shadow: none;
     border: 0.1px solid white;
 }
@@ -239,11 +251,14 @@ body:not(.device-touch) .multicolor-button{
     z-index: 1;
     position: absolute;
     padding: 20px;
+
+    transition: opacity 2s;
+    opacity: 0;
 }
 
 /***************** Modules **********************/
 
-#modules{
+#modules-container{
     display: flex;
     position: relative;
 }
@@ -255,13 +270,16 @@ body:not(.device-touch) .multicolor-button{
     flex-direction: column;
 }
 
+#text-modules p{
+    margin-bottom: 35px;
+}
+
 #scenarios-text{
     text-align: right;
 }
 
 #reception-results{
     position: relative;
-    width: 80%;
     margin-left: auto;
 }
 
@@ -270,16 +288,57 @@ body:not(.device-touch) .multicolor-button{
     z-index: 2;
 }
 
- #reception-image{
-    position: absolute;
-    left: -350px;
-    top: -200px;
+#results-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
 }
 
-#reception-image img{
-    width: 500px;
+#results-button{
+    position: absolute;
+    z-index: 2;
 }
+
+#results-modal{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow:auto;
+
+    background-color: rgba(0,0,0,0.4);
+}
+
+#content-modal{
+    background-color: #fefefe;
+
+    margin: 50px;
+    height:90% ;
+    padding-right: 15px;
+    border: 1px solid #888;
+
+    background-image: url(../img/penguin.png);
+    background-position: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 #tableau-softskills{
     margin-bottom: 100px;
@@ -320,6 +379,7 @@ body:not(.device-touch) .multicolor-button{
     width: 100%;
     height: 90%;
     margin-bottom: 20px;
+    border-radius: 15px;
 }
 
 #equipe{
@@ -354,6 +414,7 @@ body:not(.device-touch) .multicolor-button{
 	position: relative;
     width: 100%;
     max-width: 200px;
+    border-radius: 15px;
 	height: auto;
 }    
 
@@ -371,7 +432,7 @@ body:not(.device-touch) .multicolor-button{
 	Documents & Contacts
 -----------------------------------------------------------------*/
 
-#contact{
+#contact-us{
 	height: 100%;
 	text-align: center
 }
@@ -476,17 +537,18 @@ form p{
 }
 
 #bloc-message{
+    height: 380px;
     display: flex;
 }
 
 /* Buttons
 ----------------------------------------------------------------------------  */
 
-.button.button-circle { border-radius: 20px; }
+.button.button-circle { border-radius: 25px; }
 
 .button.button-border {
 	border: 2px solid #ffffff;
-	background-color: #683575;
+	background-color: #6f387c;
 	color: #ffffff;
 }
 
@@ -499,7 +561,7 @@ form p{
 .button {
 	margin: 5px;
 	padding: 8px 22px;
-	font-size: 0.875rem;
+	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -616,6 +678,8 @@ footer{
 
 /***************** Tablet **********************/
 
+
+/* salu lolo */
 @media screen and (max-width: 950px){
     
     #container {

@@ -44,15 +44,15 @@ for (let balloon of balloons){
 
 // TRAIN
 
-var train = document.querySelector("#train");
-train.addEventListener("click", startStop);
+// var train = document.querySelector("#train");
+// train.addEventListener("click", startStop);
 
-var isRunning = true;
+// var isRunning = true;
 
-function startStop()
-{
-    if (isRunning)
-    {
-        train.style.animationPlayState = "pause";
-    }
-}
+// function startStop()
+// {
+//     if (isRunning)
+//     {
+//         train.style.animationPlayState = "pause";
+//     }
+// }
