@@ -1,41 +1,18 @@
 /* SHOOTER GAME */
 
-#bloc-shooter-game
-{
-    border: solid 2px rgb(255, 255, 255);
-    border-radius: 25px;
-    width: 500px;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 70px;
-    background-color: #1f1f1f;
-}
 
-.balloon
-{
-    background-color: rgb(150, 0, 0);
-    border: solid rgb(18, 18, 18) 02px;
-    border-radius: 50%;
-    position: absolute;
-    animation-name: ballon-move;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    /* background-image: url("./images/Red_Balloon_PNG_Clip_Art-1549.png"); */
-    background-size: 100%;
-}
 
 @keyframes ballon-move{
     from{bottom: -30%;}
     to{bottom: 100%;}
 }
 
-#balloon1
+#balloon1, #balloon5
 {
     animation-duration: 2s;
 }
 
-#balloon2
+#balloon2, #balloon6
 {
     animation-duration: 3s;
 }
@@ -47,7 +24,7 @@
 
 #balloon4
 {
-    animation-duration: 3s;
+    animation-duration: 3.5s;
 }
 
 /* TRAIN
@@ -101,24 +78,7 @@
 
 /* MEUF BONNE */
 
-#bloc-girl
-{
-    position: absolute;
-    right: -280px;
-    top: 100px;
-}
 
-#metaverse-girl
-{
-    height: 700px;
-    
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    animation-name: girl-float;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
 
 @keyframes girl-float{
 	0% {
