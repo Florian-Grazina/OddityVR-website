@@ -1,4 +1,4 @@
-
+/*test nouvelle branche*/
 /***************** Import **********************/
 
 @font-face {
@@ -30,16 +30,18 @@
 
 body {
     overflow-x: hidden; /* Hide scrollbars */ 
-    background-image: url("../img/Body.png");
+    /* background-image: url("../img/Body.png"); */
+    background-image: url("../img/BckgBlue.png");
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-size: cover;
+    background-attachment: local;
+    background-size: 100%;
+    background-color: #6aadce;
     color: white;
     font-family: 'CeraLight', sans-serif;
     font-size: 25px;
     margin: 0;
 
-    background-color: #31bbcb;
+    /* background-color: #31bbcb; */
 }
 
 #container {
@@ -49,7 +51,7 @@ body {
 
 #black-band{
     /* max-width: 1300px; */
-    background-color: #3333331c;
+    background-color: transparent;
     margin: auto;
 }
 
@@ -73,6 +75,7 @@ h2{
     font-size: 40px;
     font-family: 'CeraBlack', sans-serif;
     margin-bottom: 80px;
+    text-align: center;
 }
 
 h3{
@@ -81,6 +84,43 @@ h3{
     margin-bottom: 0px;
 }
 
+h4{
+    font-size: 20px;
+    font-family: 'CeraBold', sans-serif;
+    margin-bottom: 0px;
+}
+
+/* .text-orange{
+    color: #333;
+}
+
+.text-pink {
+    color: #333;
+}
+
+.text-purple {
+    color: #333;
+}
+
+.text-blue {
+    color: #333;
+}
+
+.text-orange:hover{
+    color: #eccda7;
+}
+
+.text-pink:hover {
+    color: #facde1;
+}
+
+.text-purple:hover {
+    color: #dfc3f5;
+}
+
+.text-blue:hover {
+    color: #acdee3;
+} */
 
 .subtitle-italic{
     font-style: italic;
@@ -96,10 +136,10 @@ h3{
     text-align: center;
 }
 
-
 /***************** Barre Nav **********************/
+
 #top-band{
-    background-color: rgb(168, 83, 83);
+    background-color: #6aadce;
     position: fixed;
     z-index: 3;
     height: 95px;
@@ -116,11 +156,13 @@ nav{
     height: 60px;
     width: 1150px;
     max-width: 100%;
+
     top: 35px;
 
     background-color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: fixed;
     z-index: 3;
     border-radius: 15px;
@@ -149,33 +191,15 @@ nav{
     margin-right: 5px;
 }
 
-
 li a{
     color: #15004e;
     cursor: pointer;
 }
 
-.text-orange:hover{
-    color: #cfb391;
-}
-
-.text-pink:hover {
-    color: #d4aec0;
-}
-
-.text-purple:hover {
-    color: #bea6d1;
-}
-
-.text-blue:hover {
-    color: #8bb2b6;
-}
-
-
 /***************** Side Nav **********************/
 
 .sidenav{
-    visibility: collapse;
+    display : none;
 }
 
 #openBtn{
@@ -187,7 +211,7 @@ li a{
 /***************** Boutons **********************/
 
 .multicolor-button{ 
-    /* background-image: url("../img/ButtonBckg.png"); */
+/* background-image: url("../img/ButtonBckg.png"); */
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
     color: rgb(245, 245, 245);
@@ -210,7 +234,7 @@ li a{
 .multicolor-button:hover{
     color: white;
     /* box-shadow: none; */
-    border: 0.5px solid #444;
+    border: 0.1px solid white;
 }
 
 body:not(.device-touch) .multicolor-button{
@@ -254,7 +278,6 @@ body:not(.device-touch) .multicolor-button{
     z-index: 1;
     position: absolute;
     padding: 20px;
-
     transition: opacity 2s;
     opacity: 0;
 }
@@ -264,11 +287,10 @@ body:not(.device-touch) .multicolor-button{
 #modules-container{
     display: flex;
     position: relative;
-    align-items: center;
 }
 
 #text-modules{
-    /* width: 80%; */
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -294,7 +316,7 @@ body:not(.device-touch) .multicolor-button{
     width: 380px;
     height: 380px;
     border-radius: 25px;
-    background-color: rgb(177, 204, 255);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 #metaverse-girl
@@ -315,7 +337,6 @@ body:not(.device-touch) .multicolor-button{
 
 /***************** Scenarios **********************/
 
-
 #scenarios-text{
     text-align: right;
 }
@@ -328,7 +349,7 @@ body:not(.device-touch) .multicolor-button{
     position: relative;
     overflow: hidden;
     margin-bottom: 70px;
-    background-color: rgb(177, 204, 255);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .balloon
@@ -351,7 +372,6 @@ body:not(.device-touch) .multicolor-button{
 
 /***************** Results **********************/
 
-
 #reception-results{
     position: relative;
     margin-left: auto;
@@ -367,11 +387,14 @@ body:not(.device-touch) .multicolor-button{
     justify-content: center;
     align-items: center;
     z-index: 1;
+    margin: 250px;
 }
 
 #results-button{
     position: absolute;
     z-index: 2;
+    background-color: transparent;
+    border: none;
 }
 
 #results-modal{
@@ -413,12 +436,23 @@ body:not(.device-touch) .multicolor-button{
   cursor: pointer;
 }
 
+/* 
+#tableau-softskills{
+    margin-bottom: 100px;
+}
+
+#tableau-softskills td{
+    width: 240px;
+    height: 240px;
+    border: 2px solid black;
+    border-radius: 30px;
+} */
 
 #table{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .softskill{
@@ -426,10 +460,10 @@ body:not(.device-touch) .multicolor-button{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-
     height: 200px;
     width: 160px;
 }
+
 
 .softskill img{
     height: 110px;
@@ -450,15 +484,15 @@ body:not(.device-touch) .multicolor-button{
 }
 
 .card-image{
-    background-color: #D3A7F4;
+    background-color: rgba(255, 255, 255, 0.2);
     width: 100%;
     height: 90%;
     margin-bottom: 20px;
-    border-radius: 15px;
+    border-radius: 91px;
 }
 
 #equipe{
-    margin-bottom: 80px;
+    margin-bottom: 180px;
 }
 
 #slogan-equipe{
@@ -476,9 +510,9 @@ body:not(.device-touch) .multicolor-button{
     flex-shrink: 0;
 }
 
-.entry-title h3 a { color: #333; }
+.entry-title h3 a { color: #ffffff; }
 
-.entry-title h3 a:hover { color: #000000; }
+.entry-title h3 a:hover { color: #0E1A52; }
 
 .entry-title{
     text-align: center;
@@ -509,7 +543,8 @@ body:not(.device-touch) .multicolor-button{
 
 #contact-us{
 	height: 100%;
-	text-align: center
+	text-align: center;
+    font-family: 'CeraBlack', sans-serif;
 }
 
 .list-document{
@@ -531,9 +566,10 @@ a:link {
 }
 
 #download-document div{
-	border: #444 2px solid;
+	/* border: #444 2px solid; */
 	border-radius: 20px;
-	background-color: #62356d;
+	/* background-color: #62356d; */
+    background-color: transparent;
 }
 
 #button-document{
@@ -622,14 +658,17 @@ form p{
 .button.button-circle { border-radius: 25px; }
 
 .button.button-border {
-	border: 2px solid #ffffff;
-	background-color: #6f387c;
-	color: #ffffff;
+	/* border: 2px solid #ffffff; */
+	/* background-color: #6f387c; */
+    border: none;
+    background-color: #ffffff;
+	color: #0E1A52;
 }
 
 .button.button-border:not(.button-fill):hover {
-	background-color: #62356d;
-	color: #FFF;
+	/* background-color: #62356d; */
+    background-color: #ffffff;
+	color:#0E1A52;
 	border-color: transparent !important;
 }
 
@@ -687,15 +726,17 @@ body:not(.device-touch) .button {
 
 footer{
     min-height: 200px;
-    background-color: #303030;
-    padding-top: 20px;
+    /* background-color: #303030; */
+    background-color: #0E1A52;
+    padding-top: 70px;
     padding-bottom: 50px;
-    margin-top: -30px;
+    
 }
 
 #footer{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: no-wrap;
     max-width: 1300px;
     margin: auto;
@@ -704,14 +745,15 @@ footer{
 #footer-logo{
     display: flex;
     align-items: center;
+    justify-content: center;
     min-width: 200px;
     width: 30%;
 }
 
 #footer-logo img{
     margin: auto;
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 80px;
 }
 
 #footer-contact{
@@ -729,8 +771,8 @@ footer{
 
 #footer-social-media div a{
     margin: 5px;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-size: cover;
 }
 
