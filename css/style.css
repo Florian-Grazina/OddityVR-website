@@ -1,4 +1,3 @@
-/*test nouvelle branche*/
 /***************** Import **********************/
 
 @font-face {
@@ -25,8 +24,8 @@
     font-family: CeraMedium ;
     src: url("../fonts/CeraProMedium.otf") 
 }
-/***************** Fonds **********************/
 
+/***************** Fonds **********************/
 
 body {
     overflow-x: hidden; /* Hide scrollbars */ 
@@ -35,13 +34,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: local;
     background-size: 100%;
-    background-color: #6aadce;
+    background-color: #69ABCE;
+    background-attachment: fixed;
     color: white;
     font-family: 'CeraLight', sans-serif;
     font-size: 25px;
     margin: 0;
-
-    /* background-color: #31bbcb; */
 }
 
 #container {
@@ -50,8 +48,8 @@ body {
 }
 
 #black-band{
-    /* max-width: 1300px; */
-    background-color: transparent;
+    max-width: 1300px;
+    /* background-color: rgba(0, 0, 0, 0.048); */
     margin: auto;
 }
 
@@ -61,9 +59,6 @@ hr{
     border-radius: 30px;
     margin: 100px 0 100px 0;
 }
-
-
-
 
 /***************** Polices et Ecriture **********************/
 
@@ -136,14 +131,14 @@ h4{
     text-align: center;
 }
 
-/***************** Barre Nav **********************/
+/***************** Nav bar**********************/
 
 #top-band{
-    background-color: #6aadce;
+    background-color: #69ABCE;
     position: fixed;
     z-index: 3;
-    height: 95px;
-    width: 100%;
+    height: 60px;
+    width: 1300px;
 
 }
 
@@ -205,8 +200,6 @@ li a{
 #openBtn{
     visibility: hidden;
 }
-
-
 
 /***************** Boutons **********************/
 
@@ -282,40 +275,36 @@ body:not(.device-touch) .multicolor-button{
     opacity: 0;
 }
 
-/***************** Modules **********************/
+/***************** Presentation **********************/
 
-#modules-container{
+#presentation-container{
     display: flex;
     position: relative;
 }
 
-#text-modules{
-    width: 80%;
+#text-presentation{
+    width: 65%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-#text-modules p{
-    margin-bottom: 35px;
+#text-presentation h2{
+    font-size: 35px;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
-#bloc-girl
-{
-    margin-right: 50px;
-    /* width: 350px; */
-    /* position: absolute; */
-    /* right: -280px; */
-    /* top: 100px; */
+#bloc-girl {
+    width: 35%;
 }
 
-#blue-bloc-girl
-{
+#blue-bloc-girl {
     position: relative;
-    margin-left: -250px;
-    width: 380px;
-    height: 380px;
-    border-radius: 25px;
+    margin-left: -150px;
+    width: 450px;
+    height: 450px;
+    border-radius: 70px;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -324,8 +313,8 @@ body:not(.device-touch) .multicolor-button{
     height: 800px;
 
     position: absolute;
-    top: -150px;
-    left: -150px;
+    top: -100px;
+    left: -100px;
 
     background-size: contain;
     background-repeat: no-repeat;
@@ -335,7 +324,7 @@ body:not(.device-touch) .multicolor-button{
     animation-iteration-count: infinite;
 }
 
-/***************** Scenarios **********************/
+/***************** modules **********************/
 
 #scenarios-text{
     text-align: right;
@@ -387,14 +376,17 @@ body:not(.device-touch) .multicolor-button{
     justify-content: center;
     align-items: center;
     z-index: 1;
-    margin: 250px;
 }
 
 #results-button{
-    position: absolute;
-    z-index: 2;
+    display: flex;
+    justify-content: center;
     background-color: transparent;
     border: none;
+}
+
+#results-button img{
+    width: 800px;
 }
 
 #results-modal{
@@ -422,37 +414,25 @@ body:not(.device-touch) .multicolor-button{
     background-position: center;
 }
 
-.close {
+#close-modal {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+#close-modal:hover,
+#close-modal:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* 
-#tableau-softskills{
-    margin-bottom: 100px;
-}
-
-#tableau-softskills td{
-    width: 240px;
-    height: 240px;
-    border: 2px solid black;
-    border-radius: 30px;
-} */
-
 #table{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .softskill{
@@ -464,8 +444,8 @@ body:not(.device-touch) .multicolor-button{
     width: 160px;
 }
 
-
 .softskill img{
+    border-radius: 25px;
     height: 110px;
 }
 
@@ -475,7 +455,11 @@ body:not(.device-touch) .multicolor-button{
     font-family: CeraBlack;
 }
 
-/***************** Equipe **********************/
+.softskill img:hover{
+    background-color: #0e1b5221;
+}
+
+/***************** Team **********************/
 
 .card-container{
     height: 300px;
@@ -488,7 +472,7 @@ body:not(.device-touch) .multicolor-button{
     width: 100%;
     height: 90%;
     margin-bottom: 20px;
-    border-radius: 91px;
+    border-radius: 50px;
 }
 
 #equipe{
@@ -499,10 +483,7 @@ body:not(.device-touch) .multicolor-button{
     text-align: center;
 }
 
-
-/* ----------------------------------------------------------------
-	Blog
------------------------------------------------------------------*/
+/***************** Blog **********************/
 
 .title-container{
     padding: 0;
@@ -536,10 +517,7 @@ body:not(.device-touch) .multicolor-button{
     font-size: 20px;
 }
 
-
-/* ----------------------------------------------------------------
-	Documents & Contacts
------------------------------------------------------------------*/
+/***************** Document & Contact **********************/
 
 #contact-us{
 	height: 100%;
@@ -577,9 +555,7 @@ a:link {
 	width: 50%;
 }
 
-/* ----------------------------------------------------------------
-	Forms
------------------------------------------------------------------*/
+/***************** Forms **********************/
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   	color: rgba(255, 255, 255, 0.6);
@@ -658,18 +634,14 @@ form p{
 .button.button-circle { border-radius: 25px; }
 
 .button.button-border {
-	/* border: 2px solid #ffffff; */
-	/* background-color: #6f387c; */
     border: none;
     background-color: #ffffff;
 	color: #0E1A52;
 }
 
 .button.button-border:not(.button-fill):hover {
-	/* background-color: #62356d; */
-    background-color: #ffffff;
-	color:#0E1A52;
-	border-color: transparent !important;
+    background-color: #0E1A52;
+	color:#ffffff;
 }
 
 .button {
@@ -689,9 +661,8 @@ body:not(.device-touch) .button {
 
 .center { text-align: center !important; }
 
-/* ----------------------------------------------------------------
-	Alerts
------------------------------------------------------------------*/
+/***************** Alerts **********************/
+
 .alert{
 	top: 40%;
 	opacity: 0.7;
@@ -720,9 +691,7 @@ body:not(.device-touch) .button {
 	visibility: hidden;
 }
 
-/* ----------------------------------------------------------------
-	FOOTER
------------------------------------------------------------------*/
+/***************** Footer **********************/
 
 footer{
     min-height: 200px;

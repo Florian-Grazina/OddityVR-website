@@ -5,8 +5,8 @@ const resultsModal = document.querySelector("#results-modal");
 
 const modal = document.querySelector("#results-modal");
 
-const closeButton = document.querySelector(".close")
-
+const closeButton = document.querySelector("#close-modal")
+closeButton.addEventListener('click', closeModal)
 
 function displayResults(){
     resultsModal.style.display = "block";
@@ -17,3 +17,7 @@ window.onclick = function(event) {
       modal.style.display = "none";
     }
 } 
+
+function closeModal() {
+    modal.style.display = "none";
+}
