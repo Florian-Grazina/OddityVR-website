@@ -2,8 +2,8 @@
 var balloons = document.querySelectorAll(".balloon");
 const scoreHtml = document.querySelector("#score");
 
-var height = 70;
-var width = 50;
+var height = 90;
+var width = 90;
 
 var posX = 0;
 var posY = 0;
@@ -13,7 +13,7 @@ var score = 0;
 
 function pop(e)
 {
-    score++;
+    score+=100;
     scoreHtml.innerHTML = score;
 
     e.target.style.animation = "none";
