@@ -1,7 +1,6 @@
 /* SHOOTER GAME */
 
 
-
 @keyframes ballon-move{
     from{bottom: -30%;}
     to{bottom: 100%;}
@@ -27,58 +26,8 @@
     animation-duration: 3.5s;
 }
 
-/* TRAIN
-
-#bloc-train
-{
-    height: 100px;
-    margin-bottom: 100px;
-    position: relative;
-}
-
-#train
-{
-    overflow: hidden;
-    position: absolute;
-    bottom: -10px;
-    height: 100%;
-    width: 200px;
-    background-image: url("../img/toy-train-png-23.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    animation: train-move 6s, train-hop 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-#train:hover
-{
-    animation-play-state: paused;
-}
-
-#track 
-{
-    position: absolute;
-    bottom: 0;
-    width:100%;
-    height:5px;
-    background-color: #333;
-}
-  
-@keyframes train-move{
-    from{right: 0%;}
-    to{right: 100%;}
-}
-
-@keyframes train-hop{
-    from{bottom: -10px;}
-    to{bottom: -12px;}
-} */
 
 /* MEUF BONNE */
-
-
 
 @keyframes girl-float{
 	0% {

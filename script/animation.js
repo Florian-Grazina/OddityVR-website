@@ -1,18 +1,16 @@
 // BALLOONS
 var balloons = document.querySelectorAll(".balloon");
 const scoreHtml = document.querySelector("#score");
+var audio = new Audio('./img/pop-sound.wav');
 
 var height = 90;
 var width = 90;
 
-var posX = 0;
-var posY = 0;
-
 var score = 0;
-
 
 function pop(e)
 {
+    audio.play();
     score+=100;
     scoreHtml.innerHTML = score;
 
@@ -29,10 +27,7 @@ function spawn(balloon)
     balloon.style.height = height + "px";
     balloon.style.width = width + "px";
 
-    posX = 0;
-    posY = 0;   
-
-    balloon.style.bottom = posY - 30 + "%";
+    balloon.style.bottom = - 30 + "%";
     balloon.style.right = (Math.random() * 90) + "%";
 }
 
@@ -40,19 +35,3 @@ for (let balloon of balloons){
     balloon.addEventListener("click", pop)
     spawn(balloon);
 }
-
-
-// TRAIN
-
-// var train = document.querySelector("#train");
-// train.addEventListener("click", startStop);
-
-// var isRunning = true;
-
-// function startStop()
-// {
-//     if (isRunning)
-//     {
-//         train.style.animationPlayState = "pause";
-//     }
-// }

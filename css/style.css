@@ -1,5 +1,5 @@
-/***************** Import **********************/
 
+/***************** Import **********************/
 @font-face {
     font-family: CeraBlack ;
     src: url("../fonts/CeraProBlack.otf") 
@@ -25,17 +25,14 @@
     src: url("../fonts/CeraProMedium.otf") 
 }
 
-/***************** Fonds **********************/
 
+/***************** Fonds **********************/
 body {
     overflow-x: hidden; /* Hide scrollbars */ 
-    /* background-image: url("../img/Body.png"); */
-    background-image: url("../img/BckgBlue.png");
+    background-image: url("../img/ODDITY\ VR.png");
     background-repeat: no-repeat;
-    background-attachment: local;
-    background-size: 100%;
-    background-color: #69ABCE;
     background-attachment: fixed;
+    background-position: center;
     color: white;
     font-family: 'CeraLight', sans-serif;
     font-size: 25px;
@@ -47,12 +44,6 @@ body {
     margin: auto;
 }
 
-#black-band{
-    max-width: 1300px;
-    /* background-color: rgba(0, 0, 0, 0.048); */
-    margin: auto;
-}
-
 hr{
     width: 70%;
     border: 2px solid white;
@@ -60,8 +51,8 @@ hr{
     margin: 100px 0 100px 0;
 }
 
-/***************** Polices et Ecriture **********************/
 
+/***************** Polices et Ecriture **********************/
 h1{
     font-size: 50px;
 }
@@ -85,38 +76,6 @@ h4{
     margin-bottom: 0px;
 }
 
-/* .text-orange{
-    color: #333;
-}
-
-.text-pink {
-    color: #333;
-}
-
-.text-purple {
-    color: #333;
-}
-
-.text-blue {
-    color: #333;
-}
-
-.text-orange:hover{
-    color: #eccda7;
-}
-
-.text-pink:hover {
-    color: #facde1;
-}
-
-.text-purple:hover {
-    color: #dfc3f5;
-}
-
-.text-blue:hover {
-    color: #acdee3;
-} */
-
 .subtitle-italic{
     font-style: italic;
     font-weight: lighter;
@@ -131,14 +90,14 @@ h4{
     text-align: center;
 }
 
-/***************** Nav bar**********************/
 
+/***************** Nav bar**********************/
 #top-band{
-    background-color: #69ABCE;
+    background-color: #6A3980;
     position: fixed;
     z-index: 3;
-    height: 60px;
-    width: 1300px;
+    height: 42px;
+    width: 100%;
 
 }
 
@@ -187,12 +146,16 @@ nav{
 }
 
 li a{
-    color: #15004e;
+    color: #39155A;
     cursor: pointer;
 }
 
-/***************** Side Nav **********************/
+li a:hover{
+    color: #7d3d88;
+}
 
+
+/***************** Side Nav **********************/
 .sidenav{
     display : none;
 }
@@ -201,21 +164,17 @@ li a{
     visibility: hidden;
 }
 
-/***************** Boutons **********************/
 
+/***************** Boutons **********************/
 .multicolor-button{ 
-/* background-image: url("../img/ButtonBckg.png"); */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
     color: rgb(245, 245, 245);
-    background-color: #15004e;
+    background-color: #250d3b;
     width: 250px;
     height:70%;
     margin-right: 10px;
     border-radius: 12px;
     cursor: pointer;
-    /* box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5); */
-    font-family: 'Dosis', sans-serif;
+    font-family: 'CeraBold';
     font-size: 20px;
     font-weight: bold;
 
@@ -225,16 +184,11 @@ li a{
 }
 
 .multicolor-button:hover{
+    background-color: #39155A;
     color: white;
-    /* box-shadow: none; */
     border: 0.1px solid white;
 }
 
-body:not(.device-touch) .multicolor-button{
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-} 
 
 /***************** Accueil **********************/
 #hero{
@@ -275,8 +229,8 @@ body:not(.device-touch) .multicolor-button{
     opacity: 0;
 }
 
-/***************** Presentation **********************/
 
+/***************** Presentation **********************/
 #presentation-container{
     display: flex;
     position: relative;
@@ -286,6 +240,7 @@ body:not(.device-touch) .multicolor-button{
     width: 65%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -296,36 +251,33 @@ body:not(.device-touch) .multicolor-button{
 }
 
 #bloc-girl {
-    width: 35%;
+    width: 30%;
 }
 
 #blue-bloc-girl {
     position: relative;
-    margin-left: -150px;
-    width: 450px;
-    height: 450px;
+    margin-left: -100px;
+    width: 350px;
+    height: 350px;
     border-radius: 70px;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 #metaverse-girl
 {
-    height: 800px;
-
+    height: 700px;
     position: absolute;
-    top: -100px;
-    left: -100px;
 
-    background-size: contain;
-    background-repeat: no-repeat;
+    right: -70px;
+    top: -120px;
 
     animation-name: girl-float;
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
-/***************** modules **********************/
 
+/***************** modules **********************/
 #scenarios-text{
     text-align: right;
 }
@@ -333,7 +285,6 @@ body:not(.device-touch) .multicolor-button{
 #bloc-shooter-game
 {
     border-radius: 25px;
-    /* width: 500px; */
     height: 300px;
     position: relative;
     overflow: hidden;
@@ -343,13 +294,9 @@ body:not(.device-touch) .multicolor-button{
 
 .balloon
 {
-    /* background-color: rgb(150, 0, 0);
-    border: solid rgb(18, 18, 18) 02px;
-    border-radius: 50%; */
-
     position: absolute;
     animation-name: ballon-move;
-    animation-timing-function: linear;
+    animation-timing-function:linear;
     animation-iteration-count: infinite;
     background-image: url("../img/balloon.png");
     background-size: 100%;
@@ -517,8 +464,8 @@ body:not(.device-touch) .multicolor-button{
     font-size: 20px;
 }
 
-/***************** Document & Contact **********************/
 
+/***************** Document & Contact **********************/
 #contact-us{
 	height: 100%;
 	text-align: center;
@@ -555,8 +502,8 @@ a:link {
 	width: 50%;
 }
 
-/***************** Forms **********************/
 
+/***************** Forms **********************/
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   	color: rgba(255, 255, 255, 0.6);
   	opacity: 1; /* Firefox */
@@ -580,9 +527,9 @@ a:link {
 	background: rgba#535353;
 }
 
+
 /* Border Form Design
 ---------------------------------------------------------------------------- */
-
 .border-form-control {
 	height: 48px;
 	/* padding: 8px 4px; */
@@ -628,19 +575,19 @@ form p{
     display: flex;
 }
 
+
 /* Buttons
 ----------------------------------------------------------------------------  */
-
 .button.button-circle { border-radius: 25px; }
 
 .button.button-border {
     border: none;
     background-color: #ffffff;
-	color: #0E1A52;
+	color: #39155A;
 }
 
 .button.button-border:not(.button-fill):hover {
-    background-color: #0E1A52;
+    background-color: #250d3b;
 	color:#ffffff;
 }
 
@@ -696,7 +643,7 @@ body:not(.device-touch) .button {
 footer{
     min-height: 200px;
     /* background-color: #303030; */
-    background-color: #0E1A52;
+    background-color: #1b0b2c;
     padding-top: 70px;
     padding-bottom: 50px;
     
@@ -706,7 +653,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     max-width: 1300px;
     margin: auto;
 }
@@ -715,8 +662,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 200px;
-    width: 30%;
+    width: 350px;
 }
 
 #footer-logo img{
@@ -734,8 +680,8 @@ footer{
     justify-content: center;
     display: flex;
     align-items: center;
-    min-width: 200px;
-    width: 30%;
+    height: 80px;
+    width: 350px;
 }
 
 #footer-social-media div a{
