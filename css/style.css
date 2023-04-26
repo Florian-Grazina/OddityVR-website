@@ -54,11 +54,11 @@ hr{
 
 /***************** Polices et Ecriture **********************/
 h1{
-    font-size: 50px;
+    font-size: 55px;
 }
 
 h2{
-    font-size: 40px;
+    font-size: 43px;
     font-family: 'CeraBlack', sans-serif;
     margin-bottom: 80px;
     text-align: center;
@@ -98,7 +98,6 @@ h4{
     z-index: 3;
     height: 42px;
     width: 100%;
-
 }
 
 nav{
@@ -111,7 +110,7 @@ nav{
     width: 1150px;
     max-width: 100%;
 
-    top: 35px;
+    top: 25px;
 
     background-color: white;
     display: flex;
@@ -233,6 +232,7 @@ li a:hover{
 /***************** Presentation **********************/
 #presentation-container{
     display: flex;
+    align-items: c;
     position: relative;
 }
 
@@ -409,7 +409,8 @@ li a:hover{
 /***************** Team **********************/
 
 .card-container{
-    height: 300px;
+    width: 243px;
+    height: 400px;
     text-align: center;
     padding: 0;
 }
@@ -417,14 +418,16 @@ li a:hover{
 .card-image{
     background-color: rgba(255, 255, 255, 0.2);
     width: 100%;
-    height: 90%;
+    height: 65%;
     margin-bottom: 20px;
     border-radius: 50px;
 }
 
-#equipe{
-    margin-bottom: 180px;
+.card-title{
+    margin-bottom: 20px;
+    height: 35%;
 }
+
 
 #slogan-equipe{
     text-align: center;
@@ -467,9 +470,20 @@ li a:hover{
 
 /***************** Document & Contact **********************/
 #contact-us{
-	height: 100%;
-	text-align: center;
     font-family: 'CeraBlack', sans-serif;
+	text-align: center;
+	height: 100%;
+    height: 300px;
+    margin-top: 14px;
+}
+
+#contact-divider{
+    margin: 0;
+    padding: 0;
+    flex: none;
+    width: 0;
+    border: 2px solid rgba(255, 255, 255, 0.288);
+    border-radius: 5px;
 }
 
 .list-document{

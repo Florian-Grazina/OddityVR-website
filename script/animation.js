@@ -35,3 +35,48 @@ for (let balloon of balloons){
     balloon.addEventListener("click", pop)
     spawn(balloon);
 }
+
+
+// ON SCROLL
+
+// Add class show on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+        else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+
+// Add observe to all hidden elem
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+// Add delay to softskills
+let count = 0;
+
+document.querySelectorAll('.softskill').forEach(el => {
+    el.classList.add('delay' + count % 5);
+    count++;
+})
+
+// Add delay to team
+count = 0;
+
+document.querySelectorAll('.card-container').forEach(el => {
+    el.classList.add('delay' + count % 3);
+    count++;
+})
+
+// Add delay to softskills
+count = 0;
+
+document.querySelectorAll('.article-container').forEach(el => {
+    el.classList.add('delay' + count % 4);
+    count++;
+})

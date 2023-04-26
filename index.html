@@ -112,63 +112,63 @@
       </div>
 
       <div id="table">
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/AisanceOrale.png" alt="">
           <p class="softskill-title">Aisance orale</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/CapaciteDecider.png" alt="">
           <p class="softskill-title">Capacité à décider</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/Creativite.png" alt="">
           <p class="softskill-title">Créativité</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/Curiosite.png" alt="">
           <p class="softskill-title">Curiosité</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/Empathie.png" alt="">
           <p class="softskill-title">Empathie</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/Enthousiasme.png" alt="">
           <p class="softskill-title">Enthousiasme</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/EspritCritique.png" alt="">
           <p class="softskill-title">Esprit critique</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/EspritEquipe.png" alt="">
           <p class="softskill-title">Esprit d'equipe</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/IntegriteLoyaute.png" alt="">
           <p class="softskill-title">Integrité</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/IntelligenceEmotionnelle.png" alt="">
           <p class="softskill-title">Intelligence emotionnelle</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/ManagementLeadership.png" alt="">
           <p class="softskill-title">Management</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/ResistanceStress.png" alt="">
           <p class="softskill-title">Resistance au stress</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/ResolutionProb.png" alt="">
           <p class="softskill-title">Résolution de problèmes</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/SensNegociation.png" alt="">
           <p class="softskill-title">Capacité à négocier</p>
         </div>
-        <div class="softskill">
+        <div class="softskill hidden">
           <img src="./img/Soft skills/SensService.png" alt="">
           <p class="softskill-title">Sens du service</p>
         </div>
@@ -220,7 +220,7 @@
         <div id="results-image">
           <!-- <img src="./img/Enveloppe.png" alt="Enveloppe">
           <button id="results-button" >OPEN</button> -->
-          <button id="results-button" ><img src="./img/Bouton.png" alt=""></button>
+          <button id="results-button" ><img class="hidden" src="./img/Bouton.png" alt=""></button>
 
           <div id="results-modal">
             <div id="content-modal">
@@ -265,20 +265,26 @@
       <div id="equipe">
         <h2>Notre équipe :</h2>
         <div class="row row-cols-9 d-flex justify-content-around">
-          <div class="card-container col-3">
+          <div class="card-container col-3 hidden">
             <div class="card-image"></div>
-            <h3>Denis DEGUILHEN</h3>
-            <h4>Président associé</h4>
+            <div class="card-title">
+              <h3>Denis DEGUILHEN</h3>
+              <h4>Président associé</h4>
+            </div>
           </div>
-          <div class="card-container col-3">
+          <div class="card-container col-3 hidden">
             <div class="card-image"></div>
-            <h3>Thomas CACAN</h3>
-            <h4>Responsable du développement</h4>
+            <div class="card-title">
+              <h3>Thomas CACAN</h3>
+              <h4>Responsable du développement</h4>
+            </div>
           </div>
-          <div class="card-container col-3">
+          <div class="card-container col-3 hidden">
             <div class="card-image"></div>
-            <h3>Lisa PIANNINI</h3>
-            <h4>Chargée de projet marketing et communication</h4>
+            <div class="card-title">
+              <h3>Lisa PIANNINI</h3>
+              <h4>Chargée de projet marketing et communication</h4>
+            </div>
           </div>
         </div>
       </div>
@@ -292,7 +298,7 @@
     <section>
       <h2 class="mx-auto">Blog</h2>
       <div class="row posts">
-        <div class="col-md-6 mb-4 article-container">
+        <div class="entry col-md-6 mb-4 article-container hidden">
           <div class="col-lg-6 title-container">
             <span id="tag-1" class="tag text-italic">Tag 1</span>
             <div class="entry-title">
@@ -305,7 +311,7 @@
             </div>
           </div>
         </div>
-        <div class="entry col-md-6 mb-4 article-container">
+        <div class="entry col-md-6 mb-4 article-container hidden">
           <div class="col-lg-6 title-container">
             <span id="tag-2" class="tag text-italic">Tag 2</span>
             <div class="entry-title">
@@ -318,7 +324,7 @@
             </div>
           </div>
         </div>
-        <div class="entry col-md-6 mb-4 article-container">
+        <div class="entry col-md-6 mb-4 article-container hidden">
           <div class="col-lg-6 title-container">
             <span id="tag-3" class="tag text-italic">Tag 3</span>
             <div class="entry-title">
@@ -331,7 +337,7 @@
             </div>
           </div>
         </div>
-        <div class="entry col-md-6 mb-4 article-container">
+        <div class="entry col-md-6 mb-4 article-container hidden">
           <div class="col-lg-6 title-container">
             <span id="tag-4" class="tag text-italic">Tag 4</span>
             <div class="entry-title">
@@ -354,7 +360,7 @@
 
     <section>
       <h2 class="mx-auto">Contact & Documents</h2>
-      <div class="row mb-0" style="height: 100%;">
+      <div class="row mb-0">
         <div class="col-md-5">
           <div id="contact-us">
             <h3>CONTACTEZ NOUS</h3>
@@ -365,6 +371,9 @@
               57070 Saint-Julien-les-Metz</p>
           </div>
         </div>
+
+        <div class="col" id="contact-divider"></div>
+
         <div class="col-md-7 row">
           <div id="download-document">
             <div class="list-document">Nom du document</div>
