@@ -232,7 +232,7 @@ li a:hover{
 /***************** Presentation **********************/
 #presentation-container{
     display: flex;
-    align-items: c;
+    align-items: center;
     position: relative;
 }
 
