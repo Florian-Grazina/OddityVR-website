@@ -29,13 +29,13 @@
 /***************** Fonds **********************/
 body {
     overflow-x: hidden; /* Hide scrollbars */ 
-    background-image: url("../img/ODDITY\ VR.png");
+    background-image: url("../assets/ODDITY_VR.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     color: white;
     font-family: 'CeraLight', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
 
@@ -97,7 +97,9 @@ h4{
     position: fixed;
     z-index: 3;
     height: 42px;
-    width: 100%;
+
+    width: 1150px;
+    max-width: 100%;
 }
 
 nav{
@@ -298,12 +300,23 @@ li a:hover{
     animation-name: ballon-move;
     animation-timing-function:linear;
     animation-iteration-count: infinite;
-    background-image: url("../img/balloon.png");
+    background-image: url("../assets/balloon.png");
     background-size: 100%;
 }
 
 #score{
     margin: 20px;
+}
+
+.scenario-video{
+    width: 320px;
+    text-align: center;
+}
+
+.scenario-video embed{
+    border-radius: 25px;
+    width: 100%;
+    filter: brightness(0.9);
 }
 
 /***************** Results **********************/
@@ -357,7 +370,7 @@ li a:hover{
     padding-right: 15px;
     border: 1px solid #888;
 
-    background-image: url(../img/penguin.png);
+    background-image: url(../assets/penguin.png);
     background-position: center;
 }
 
@@ -432,7 +445,6 @@ li a:hover{
 #slogan-equipe{
     text-align: center;
 }
-
 /***************** Blog **********************/
 
 .title-container{
@@ -706,19 +718,19 @@ footer{
 }
 
 #facebook{
-    background-image: url(../img/Icon_awesome-facebook-square.png);
+    background-image: url(../assets/Icon_awesome-facebook-square.png);
 }
 
 #twitter{
-    background-image: url(../img/Icon_awesome-twitter-square.png);
+    background-image: url(../assets/Icon_awesome-twitter-square.png);
 }
 
 #google{
-    background-image: url(../img/Icon_awesome-google.png);
+    background-image: url(../assets/Icon_awesome-google.png);
 }
 
 #linkedin{
-    background-image: url(../img/Icon_awesome-linkedin.png);
+    background-image: url(../assets/Icon_awesome-linkedin.png);
 }
 
 

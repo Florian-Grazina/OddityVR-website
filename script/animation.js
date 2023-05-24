@@ -1,7 +1,7 @@
 // BALLOONS
 var balloons = document.querySelectorAll(".balloon");
 const scoreHtml = document.querySelector("#score");
-var audio = new Audio('./img/pop-sound.wav');
+var audio = new Audio('./assets/pop-sound.wav');
 
 var height = 90;
 var width = 90;
