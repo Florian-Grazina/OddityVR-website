@@ -29,13 +29,13 @@
 /***************** Fonds **********************/
 body {
     overflow-x: hidden; /* Hide scrollbars */ 
-    background-image: url("../img/ODDITY\ VR.png");
+    background-image: url("../assets/ODDITY_VR.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     color: white;
     font-family: 'CeraLight', sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     margin: 0;
 }
 
@@ -73,7 +73,6 @@ h3{
 h4{
     font-size: 20px;
     font-family: 'CeraBold', sans-serif;
-    margin-bottom: 0px;
 }
 
 .subtitle-italic{
@@ -97,7 +96,9 @@ h4{
     position: fixed;
     z-index: 3;
     height: 42px;
-    width: 100%;
+
+    width: 1150px;
+    max-width: 100%;
 }
 
 nav{
@@ -191,23 +192,23 @@ li a:hover{
 
 /***************** Accueil **********************/
 #hero{
+    margin-top: 100px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #accueil{
-    flex-shrink: 0;
-    width: 1300px;
-    max-width: 100%;
+    width: 1350px;
     height: 800px;
+    margin: auto;
 }
-#accueil embed{
-    width: 100%;
-    height: 100%;
-    /* margin: 0; */
-    /* padding: 0; */
-    border-radius: 30px;
+
+#accueil iframe{
+    width: 1350px;
+    height: 800px;
+    margin: auto;
 }
 
 #slogan{
@@ -228,6 +229,16 @@ li a:hover{
     opacity: 0;
 }
 
+#home-logo{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#home-logo img{
+    height: 180px;
+}
+
 
 /***************** Presentation **********************/
 #presentation-container{
@@ -238,10 +249,6 @@ li a:hover{
 
 #text-presentation{
     width: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 #text-presentation h2{
@@ -279,7 +286,7 @@ li a:hover{
 
 /***************** modules **********************/
 #scenarios-text{
-    text-align: right;
+    text-align: center;
 }
 
 #bloc-shooter-game
@@ -298,12 +305,24 @@ li a:hover{
     animation-name: ballon-move;
     animation-timing-function:linear;
     animation-iteration-count: infinite;
-    background-image: url("../img/balloon.png");
+    background-image: url("../assets/balloon.png");
     background-size: 100%;
 }
 
 #score{
     margin: 20px;
+}
+
+.scenario-video{
+    width: 320px;
+    text-align: center;
+}
+
+.scenario-video embed{
+    border-radius: 25px;
+    width: 100%;
+    filter: brightness(0.9);
+    margin-bottom: 20px;
 }
 
 /***************** Results **********************/
@@ -351,21 +370,28 @@ li a:hover{
 
 #content-modal{
     background-color: #fefefe;
+    position: relative;
 
     margin: 50px;
     height:90% ;
-    padding-right: 15px;
-    border: 1px solid #888;
+    padding: 14px;
 
-    background-image: url(../img/penguin.png);
+    background-color: transparent;
     background-position: center;
+}
+
+#content-modal img{
+    border-radius: 20px;
+    width: 100%;
 }
 
 #close-modal {
   color: #aaa;
-  float: right;
-  font-size: 28px;
+  position: fixed;
+  right: 90px;
+  font-size: 60px;
   font-weight: bold;
+  z-index: 5;
 }
 
 #close-modal:hover,
@@ -409,10 +435,11 @@ li a:hover{
 /***************** Team **********************/
 
 .card-container{
-    width: 243px;
+    width: 245px;
     height: 400px;
     text-align: center;
     padding: 0;
+    margin: 20px;
 }
 
 .card-image{
@@ -432,7 +459,6 @@ li a:hover{
 #slogan-equipe{
     text-align: center;
 }
-
 /***************** Blog **********************/
 
 .title-container{
@@ -471,10 +497,6 @@ li a:hover{
 /***************** Document & Contact **********************/
 #contact-us{
     font-family: 'CeraBlack', sans-serif;
-	text-align: center;
-	height: 100%;
-    height: 300px;
-    margin-top: 14px;
 }
 
 #contact-divider{
@@ -482,17 +504,16 @@ li a:hover{
     padding: 0;
     flex: none;
     width: 0;
-    border: 2px solid rgba(255, 255, 255, 0.288);
+    border: 1px solid rgba(255, 255, 255, 0.288);
     border-radius: 5px;
 }
 
 .list-document{
-	height: 17%;
+	height: 38px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 8%;
-    font-size: 22px;
+	margin-bottom: 40px;
 }
 
 a:link {
@@ -500,19 +521,21 @@ a:link {
 }
 
 #download-document{
-	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 	width: 50%;
 }
 
 #download-document div{
-	/* border: #444 2px solid; */
 	border-radius: 20px;
-	/* background-color: #62356d; */
     background-color: transparent;
 }
 
 #button-document{
-	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 	width: 50%;
 }
 
@@ -700,27 +723,30 @@ footer{
 
 #footer-social-media div a{
     margin: 5px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-size: cover;
 }
 
 #facebook{
-    background-image: url(../img/Icon_awesome-facebook-square.png);
+    background-image: url(../assets/Icon_awesome-facebook-square.png);
 }
 
 #twitter{
-    background-image: url(../img/Icon_awesome-twitter-square.png);
+    background-image: url(../assets/Icon_awesome-twitter-square.png);
 }
 
 #google{
-    background-image: url(../img/Icon_awesome-google.png);
+    background-image: url(../assets/Icon_awesome-google.png);
 }
 
 #linkedin{
-    background-image: url(../img/Icon_awesome-linkedin.png);
+    background-image: url(../assets/Icon_awesome-linkedin.png);
 }
 
+#tiktok{
+    background-image: url(../assets/Icon\ awesome-tiktok.png);
+}
 
 /***************** Tablet **********************/
 

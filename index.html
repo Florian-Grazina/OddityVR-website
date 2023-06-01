@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
-test
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="application/x-www-form-urlencoded; charset=UTF-8"/>
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/animation.css">
   <!-- test -->
-
   <title>Oddity VR Accueil</title>
 </head>
 
 <body>
-  
-  <div id="top-band"></div>
+  <div class="d-flex justify-content-around">
+    <div id="top-band"></div>
+  </div>
   <div id="container">
     
 
     <!-- NAVBAR
       -------------------------------------- -->
-      <nav>
-        
-        <div id="navbar-container">
+    <nav>
+      
+      <div id="navbar-container">
 
         <div id="mySidenav" class="sidenav">
           <a id="closeBtn" href="#" class="close">×</a>
           <ul>
             <li><a href="#accueil" class="text-blue">Accueil</a></li>
-              <li><a href="#modules" class="text-purple">Modules</a></li>
-              <li><a href="#blog" class="text-pink">Blog</a></li>
-              <li><a href="#contact" class="text-orange">Contact</a></li>
-              <li><button id="demo-button" class="multicolor-button">Réserver une démo</button></li>
+            <li><a href="#modules" class="text-purple">Modules</a></li>
+            <li><a href="#contact" class="text-purple">Nos Offres</a></li>
+            <!-- <li><a href="#blog" class="text-pink">Blog</a></li> -->
+            <li><a href="#contact" class="text-orange">Contact</a></li>
+            <li><button href="#form" id="demo-button" class="multicolor-button">Réserver une démo</button></li>
           </ul>
         </div>
 
@@ -49,34 +50,43 @@ test
 
         <ul id="navbar-list">
           <li><a href="#accueil" class="text-blue">Accueil</a></li>
-          <li><a href="#modules" class="text-purple">Modules</a></li>
-          <li><a href="#blog" class="text-pink">Blog</a></li>
-          <li><a href="#contact" class="text-orange">Contact</a></li>
+            <li><a href="#modules" class="text-purple">Modules</a></li>
+            <li><a href="#contact" class="text-purple">Nos Offres</a></li>
+            <!-- <li><a href="#blog" class="text-pink">Blog</a></li> -->
+            <li><a href="#contact" class="text-orange">Contact</a></li>
         </ul>
+
         <a href="#form" type="button" class="multicolor-button">Réserver une démo</a>
+
       </div>
     </nav>
   
 
     <!-- HOME PAGE
     -------------------------------------- -->
-    <div id="hero">
-      <div id="slogan">
-        <h1>Identifiez les Soft Skills grâce à la réalité virtuelle !</h1>
-        <p>
-          Oddity-VR est la rencontre réussie d’expertises variées et complémentaires (ressources humaines, réalité
-          virtuelle
-          et psychanalyse).
-          L’immersion proposée aux utilisateurs leur offre l’opportunité de valoriser des compétences comportementales
-          qui
-          seront la clé de leur réussite personnelle mais aussi collective.
-        </p>
+    <section>
+      <div id="hero">
+        <div id="slogan">
+          <h1>Identifiez les Soft Skills grâce à la réalité virtuelle !</h1>
+          <p>
+            Oddity-VR est la rencontre réussie d’expertises variées et complémentaires (ressources humaines, réalité
+            virtuelle
+            et psychanalyse).
+            L’immersion proposée aux utilisateurs leur offre l’opportunité de valoriser des compétences comportementales
+            qui
+            seront la clé de leur réussite personnelle mais aussi collective.
+          </p>
+        </div>
+        <div id="accueil">
+          <iframe src="./assets/videos/teasing.mov"/>
+          <!-- <embed src="./assets/videos/teasing.mov" type="video/webm"> -->
+        </div>
       </div>
-      <div id="accueil">
-        <embed src="./img/teasing.mp4" type="video/webm">
+      
+      <div id="home-logo">
+        <img src="./assets/LogoBlanc.png" alt="Logo OddityVR">
       </div>
-    </div>
-
+    </section>
 
     <!-- PRESENTATION
     -------------------------------------- -->
@@ -87,14 +97,16 @@ test
 
         <div id="bloc-girl">
           <div id="blue-bloc-girl">
-            <img id="metaverse-girl" src="./img/Fille3D.png" alt="Fille flotante">
+            <img id="metaverse-girl" src="./assets/Fille3D.png" alt="Fille flotante">
           </div>
         </div>
 
         <div id="text-presentation">
-          <h2>Faites vivre une expérience unique et libérez le potentiel soft skills de vos collaborateurs, candidats et apprentis :</h2> 
-          <p>Notre ambition est de faire du développement et de la valorisation des soft skills une priorité pour répondre aux enjeux des entreprises et des mutations à venir (robotisation, IA ...).</p>
-          <p>Avec Oddity-VR vous développez le profil de compétences de vos collaborateurs et apprentis. C'est pourquoi au delà de l'utilisation de l'outil, nous vous accompagnons avec une formation complète sur les softs skills et sur l'accompagnement humain à fournir.</p>
+          <h2>Libérez les potentiels avec le premier outil de réalité virtuelle révélateur de savoir-être :</h2>
+
+          <p>Oddity, la VR au service de l'humain.</p>
+          <p>Faites le choix d'une approche innovante , qui utilise les dernières technologies pour découvrir les soft skills. L'immersion proposée permet de révéler des comportements authentiques au plus proche du réél. Vous disposez d'un résultat instantané qui vous donne le potentiel de savoir-être à valoriser et à stimuler.</p>
+          <p><b>Simple, intuitif et nomade, l'outil s'adapte à vos usages et à votre public</b></p>
         </div>
 
       </div>
@@ -107,74 +119,74 @@ test
       <hr id="modules" class="mx-auto d-block">
 
       <div class="row">
-        <h2 class="col title">15 soft skills analysées, parmis les plus prisées sur le marché du travail.</h2>
+        <h2 class="col title">15 soft skills analysées, parmis les plus prisées sur le marché du travail</h2>
         
       </div>
 
       <div id="table">
         <div class="softskill hidden">
-          <img src="./img/Soft skills/AisanceOrale.png" alt="">
+          <img src="./assets/Soft skills/AisanceOrale.png" alt="">
           <p class="softskill-title">Aisance orale</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/CapaciteDecider.png" alt="">
+          <img src="./assets/Soft skills/CapaciteDecider.png" alt="">
           <p class="softskill-title">Capacité à décider</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/Creativite.png" alt="">
+          <img src="./assets/Soft skills/Creativite.png" alt="">
           <p class="softskill-title">Créativité</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/Curiosite.png" alt="">
+          <img src="./assets/Soft skills/Curiosite.png" alt="">
           <p class="softskill-title">Curiosité</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/Empathie.png" alt="">
+          <img src="./assets/Soft skills/Empathie.png" alt="">
           <p class="softskill-title">Empathie</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/Enthousiasme.png" alt="">
+          <img src="./assets/Soft skills/Enthousiasme.png" alt="">
           <p class="softskill-title">Enthousiasme</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/EspritCritique.png" alt="">
+          <img src="./assets/Soft skills/EspritCritique.png" alt="">
           <p class="softskill-title">Esprit critique</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/EspritEquipe.png" alt="">
+          <img src="./assets/Soft skills/EspritEquipe.png" alt="">
           <p class="softskill-title">Esprit d'equipe</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/IntegriteLoyaute.png" alt="">
+          <img src="./assets/Soft skills/IntegriteLoyaute.png" alt="">
           <p class="softskill-title">Integrité</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/IntelligenceEmotionnelle.png" alt="">
+          <img src="./assets/Soft skills/IntelligenceEmotionnelle.png" alt="">
           <p class="softskill-title">Intelligence emotionnelle</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/ManagementLeadership.png" alt="">
+          <img src="./assets/Soft skills/ManagementLeadership.png" alt="">
           <p class="softskill-title">Management</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/ResistanceStress.png" alt="">
+          <img src="./assets/Soft skills/ResistanceStress.png" alt="">
           <p class="softskill-title">Resistance au stress</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/ResolutionProb.png" alt="">
+          <img src="./assets/Soft skills/ResolutionProb.png" alt="">
           <p class="softskill-title">Résolution de problèmes</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/SensNegociation.png" alt="">
+          <img src="./assets/Soft skills/SensNegociation.png" alt="">
           <p class="softskill-title">Capacité à négocier</p>
         </div>
         <div class="softskill hidden">
-          <img src="./img/Soft skills/SensService.png" alt="">
+          <img src="./assets/Soft skills/SensService.png" alt="">
           <p class="softskill-title">Sens du service</p>
         </div>
       </div>
 
-      <img id="graph" class="mx-auto img-fluid" src="./img/Graphique.png" alt="Soft Skills graphique">
+      <!-- <img id="graph" class="mx-auto img-fluid" src="./assets/Graphique.png" alt="Soft Skills graphique"> -->
 
       <hr class="mx-auto d-block">
 
@@ -185,7 +197,36 @@ test
 -------------------------------------- -->
     <section>
       
-      <h2 id="scenarios-text title">12 scénarios, 12 décors complètement déconnectés du monde du travail.</h2>
+      <h2 id="title">12 scénarios, 12 décors complètement déconnectés du monde du travail</h2>
+
+      <div id="scenarios-text">
+        <p>La réalité virtuelle permet de créer des situations réalistes, c'est le média le plus puissant pour générer de l'émotion, grâce à une immersion complète. De nombreux sens sont mobilisés : la vue, l'ouïe ou encore le toucher.</p>
+        <p>Tout cela permet d'analyser efficacement le comportement de l'utilisateur en situation sans avoir à déployer des moyens humains ou financiers importants.</p>
+      </div>
+
+      <br>
+      <br>
+
+      <div id="equipe">
+        <div class="row row-cols-9 d-flex justify-content-around">
+          
+          <div class="scenario-video col-3">
+            <embed src="./assets/videos/Escalade.gif" type="video/webm">
+              <h4>Irresistible ascension</h4>
+            </div>
+          <div class="scenario-video col-3">
+            <embed src="./assets/videos/Pont.gif" type="video/webm">
+              <h4>Le pont de l'imposible</h4>
+            </div>
+            <div class="scenario-video col-3">
+              <embed src="./assets/videos/Planche.gif" type="video/webm">
+                <h4>Le prix à payer !</h4>
+            </div>
+            
+        </div>
+      </div>
+
+    <hr class="mx-auto d-block">
 
       <div id="bloc-shooter-game" class="col">
         <div id="balloon1" class="balloon"></div>
@@ -197,66 +238,29 @@ test
         <p id="score">0</p>
       </div>
       
-    
-
     <hr class="mx-auto d-block">
+    
     </section>
 
 
 <!-- RESULTS
 -------------------------------------- -->
+    <section>
       <div id="reception-results" >
-          <h2>Réception immédiate des résultats</h2>
-          <!-- <p>
-            Bonne capacité d’analyse et d’observation des détails. Bonne réactivité et de l’enthousiasme dans sa façon
-            de
-            se comporter. Animé(e) d’une vraie curiosité qui l’amène à s’intéresser à son environnement et à explorer
-            les
-            différentes solutions possibles. Une vraie détermination pour chercher les moyens capables de résoudre les
-            problèmes ou les issues à gérer. Une confiance envers les autres peut-être à renforcer.
-            Point de vigilance : attention à ce que cette quête de curiosité ne conduise pas à se mettre en situation de
-            risque.
-          </p> -->
+        <h2>Réception immédiate des résultats</h2>
         <div id="results-image">
-          <!-- <img src="./img/Enveloppe.png" alt="Enveloppe">
-          <button id="results-button" >OPEN</button> -->
-          <button id="results-button" ><img class="hidden" src="./img/Bouton.png" alt=""></button>
-
+          <button id="results-button" ><img class="hidden" src="./assets/Bouton.png" alt="result-button"></button>
           <div id="results-modal">
             <div id="content-modal">
               <span id="close-modal">&times;</span>
+              <img src="./assets/EX RSLT V4M-1.png" alt="">
             </div>
           </div>
-
         </div>
-
-        
+      
         <hr class="mx-auto d-block">
-        <!-- <h2>Note pour les entreprises, leurs salariés et candidats :</h2>
-          <h3>Les soft skills permettent :</h3>
-          <ul class="light-text">
-            <li>De répondre aux évolutions du marché du travail, à l’obsolescence de plus en plus rapide des compétences
-              techniques. </li>
-              <li>De renforcer la capacité de réinvention de l’entreprise et sa pérennité. </li>
-              <li> D'améliorer et compléter le profil de compétences des salariés. </li>
-              <li>De préserver et garantir l'employabilité future. </li>
-              <li>D'élargir les perspectives d’évolution de carrière. </li>
-            </ul>
-            <h3>Choisir Oditty VR, c'est : </h3>
-            <ul class="light-text">
-              <li>Faire le choix d’un outil innovant, ludique et axé sur l’humain. </li>
-              <li>Valoriser et amplifier l’attractivité de votre marque employeur. </li>
-              <li> Contribuer directement au bien-être et à la cohésion des équipes. </li>
-            </ul>
-            <br>
-      <p class="text-italic text-center">Ces bénéfices vous permettront d’attirer les meilleurs talents,<br> notamment
-        chez les jeunes
-        générations.
-        <br> Vous pourrez également intéresser des profils éloignés du marché de l’emploi, <br>
-        pour ensuite les former sur les compétences techniques essentielles au poste ciblé.</p>
-      </section>
-      <hr class="mx-auto d-block"> -->
-    </div>
+      </div>
+    </section>
 
 
     <!-- TEAM!
@@ -282,8 +286,22 @@ test
           <div class="card-container col-3 hidden">
             <div class="card-image"></div>
             <div class="card-title">
-              <h3>Lisa PIANNINI</h3>
-              <h4>Chargée de projet marketing et communication</h4>
+              <h3>Saïd LAHIANE</h3>
+              <h4>Responsable du développement - Maroc</h4>
+            </div>
+          </div>
+          <div class="card-container col-3 hidden">
+            <div class="card-image"></div>
+            <div class="card-title">
+              <h3>Saïd LAHIANE</h3>
+              <h4>Responsable du développement - Maroc</h4>
+            </div>
+          </div>
+          <div class="card-container col-3 hidden">
+            <div class="card-image"></div>
+            <div class="card-title">
+              <h3>Saïd LAHIANE</h3>
+              <h4>Responsable du développement - Maroc</h4>
             </div>
           </div>
         </div>
@@ -293,7 +311,7 @@ test
 
     <!-- BLOG!
   ---------------------------------------->
-    <hr id="blog" class="mx-auto d-block">
+    <!-- <hr id="blog" class="mx-auto d-block">
 
     <section>
       <h2 class="mx-auto">Blog</h2>
@@ -307,7 +325,7 @@ test
           </div>
           <div class="col-lg-6">
             <div class="entry-image">
-              <a href="#"><img src="./img/blog/1.jpg" alt="Paris"></a>
+              <a href="#"><img src="./assets/blog/1.jpg" alt="Paris"></a>
             </div>
           </div>
         </div>
@@ -320,7 +338,7 @@ test
           </div>
           <div class="col-lg-6 ">
             <div class="entry-image">
-              <a href="#"><img src="./img/blog/2.jpg" alt="Paris"></a>
+              <a href="#"><img src="./assets/blog/2.jpg" alt="Paris"></a>
             </div>
           </div>
         </div>
@@ -333,7 +351,7 @@ test
           </div>
           <div class="col-lg-6 ">
             <div class="entry-image">
-              <a href="#"><img src="./img/blog/3.jpg" alt="Paris"></a>
+              <a href="#"><img src="./assets/blog/3.jpg" alt="Paris"></a>
             </div>
           </div>
         </div>
@@ -346,12 +364,12 @@ test
           </div>
           <div class="col-lg-6">
             <div class="entry-image">
-              <a href="#"><img src="./img/blog/4.jpg" alt="Paris"></a>
+              <a href="#"><img src="./assets/blog/4.jpg" alt="Paris"></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <!-- DOCUMENTS
@@ -361,14 +379,15 @@ test
     <section>
       <h2 class="mx-auto">Contact & Documents</h2>
       <div class="row mb-0">
-        <div class="col-md-5">
+        <div class="col-md-5 align-item-center">
           <div id="contact-us">
-            <h3>CONTACTEZ NOUS</h3>
-            <p>Oddity VR </p>
-            <p>03 87 76 18 00 </p>
-            <p>contact@Oddity-vr.com </p>
-            <p>104 bis rue Jean Burger <br>
-              57070 Saint-Julien-les-Metz</p>
+            <h3>Contactez-nous :</h3>
+            <br>
+            <p>Oddity VR <br>
+            contact@Oddity-vr.com <br>
+            07 81 13 39 48</p>
+            <p>104bis Rue JeanBurger <br>
+              57070 Saint-Julien-lès-Metz</p>
           </div>
         </div>
 
@@ -376,26 +395,16 @@ test
 
         <div class="col-md-7 row">
           <div id="download-document">
-            <div class="list-document">Nom du document</div>
-            <div class="list-document">Nom du document</div>
-            <div class="list-document">Nom du document</div>
-            <div class="list-document">Nom du document</div>
+            <h3 class="list-document">Tarifs</h3>
+            <h3 class="list-document">Tarifs</h3>
           </div>
           <div id="button-document">
             <div class="list-document">
-              <a href="./img/penguin.png" download="proposed_file_name"
+              <a href="./assets/penguin.png" download="proposed_file_name"
                 class="button button-border button-circle ms-0">Télécharger</a>
             </div>
             <div class="list-document">
-              <a href="./img/penguin.png" download="proposed_file_name"
-                class="button button-border button-circle ms-0">Télécharger</a>
-            </div>
-            <div class="list-document">
-              <a href="./img/penguin.png" download="proposed_file_name"
-                class="button button-border button-circle ms-0">Télécharger</a>
-            </div>
-            <div class="list-document">
-              <a href="./img/penguin.png" download="proposed_file_name"
+              <a href="./assets/penguin.png" download="proposed_file_name"
                 class="button button-border button-circle ms-0">Télécharger</a>
             </div>
           </div>
@@ -409,8 +418,8 @@ test
     <hr id="form" class="mx-auto d-block">
 
     <section style="position: relative;">
-      <h2 class="mx-auto">Formulaire</h2>
-      <form class="row mb-0" id="contactform" name="contactform">
+      <h2 class="mx-auto">Formulaire de contact</h2>
+      <form class="row mb-0" id="contactform" name="contactform" enctype="multipart/form-data">
         <div class="col-md-6 mb-4">
           <input type="text" id="contactform-name" name="contactform-name" value=""
             class="sm-form-control border-form-control" placeholder="Nom" />
@@ -456,8 +465,8 @@ test
   <footer>
     <div id="footer">
       <div id="footer-logo">
-        <!-- <img src="./img/pngimg.com - pigeon_PNG54587.png" alt="logo-footer"> -->
-        <img src="./img/LogoBlanc.png" alt="logo-footer">
+        <!-- <img src="./assets/pngimg.com - pigeon_PNG54587.png" alt="logo-footer"> -->
+        <img src="./assets/LogoBlanc.png" alt="logo-footer">
       </div>
       <!-- <div id="footer-contact">
         <p>Oddity VR </p>
@@ -468,10 +477,11 @@ test
       </div> -->
       <div id="footer-social-media">
         <div class="row mb-0">
-          <a href="https://www.facebook.com/people/Oddity-VR/100063989622066/?paipv=0&eav=Afas54osxqAVrXnToRyQATafQIP5U_o95_UKbI5aG9xcA5-5vVPvHSCKTqYMGwUP2P4&_rdr" target="_blank" id="facebook" class="col-3"></a>
+          <!-- <a href="https://www.facebook.com/people/Oddity-VR/100063989622066/?paipv=0&eav=Afas54osxqAVrXnToRyQATafQIP5U_o95_UKbI5aG9xcA5-5vVPvHSCKTqYMGwUP2P4&_rdr" target="_blank" id="facebook" class="col-3"></a> -->
           <a href="https://twitter.com/OddityVr" target="_blank" id="twitter" class="col-3"></a>
-          <a href="https://www.google.com/maps/place/Oddity+VR/@49.1322303,6.2009627,15z/data=!4m6!3m5!1s0x4794df442bafd6c5:0x942d3340490c7b4e!8m2!3d49.1322303!4d6.2009627!16s%2Fg%2F11s_yy0mj0" target="_blank" id="google" class="col-3"></a>
+          <!-- <a href="https://www.google.com/maps/place/Oddity+VR/@49.1322303,6.2009627,15z/data=!4m6!3m5!1s0x4794df442bafd6c5:0x942d3340490c7b4e!8m2!3d49.1322303!4d6.2009627!16s%2Fg%2F11s_yy0mj0" target="_blank" id="google" class="col-3"></a> -->
           <a href="https://www.linkedin.com/company/oddity-vr?originalSubdomain=fr" target="_blank" id="linkedin" class="col-3"></a>
+          <a href="https://www.linkedin.com/company/oddity-vr?originalSubdomain=fr" target="_blank" id="tiktok" class="col-3"></a>
         </div>
       </div>
     </div>
@@ -480,10 +490,9 @@ test
     <script src="./script/sidenav.js"></script>
     <script src="./script/animation.js"></script>
     <script src="./script/blog.js"></script>
-    <script src="./script/contact.js"></script>
     <script src="./script/results.js"></script>
     <script src="./script/video.js"></script>
-
+    <script src="./script/contact.js"></script>
 </body>
 
 </html>

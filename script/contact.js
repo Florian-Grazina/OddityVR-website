@@ -2,7 +2,6 @@
 // FORM
 // ----------------------------------------------------
 
-
 const formName = document.querySelector("#contactform-name");
 formName.addEventListener('blur', CheckFieldBlur);
 
@@ -71,6 +70,8 @@ function CheckEmailSend(field) {
 
 
 function CheckAll(e) {
+    e.preventDefault();
+    
     let listOfChecks = [];
     console.log("checking data");
 
@@ -118,14 +119,14 @@ function SubmitData() {
     let message = formMessage.value;
 
     let form = {
-        "Name" : name,
-        "Email" : email,
-        "Phone" : phone,
-        "Subject" : subject,
-        "Message" : message
+        "name" : name,
+        "email" : email,
+        "phone" : phone,
+        "subject" : subject,
+        "message" : message
     }
 
-    postData("http://localhost:8081/api/v1/create_prospe", form);
+    postData("http://localhost:8081/api/v1/send_email", form);
 }
 
 // API
@@ -135,6 +136,8 @@ async function postData(url = "", data = {}) {
 
     loader.style.visibility = "visible";
     buttonSubmit.disabled = true;
+
+    var success = false;
 
     fetch(url, {
         method: "POST",
@@ -151,15 +154,17 @@ async function postData(url = "", data = {}) {
         console.log(response);
         if (response.ok){
             TriggerAlert(alertSuccess);
+            success = true;
             return response.json();
         }
-        throw new Error(error);
     })
+
     .then(data => {
         return data})
 
     .catch((error) => {
-        TriggerAlert(alertDanger);
+        if (!success){
+            TriggerAlert(alertDanger);
+        }
     })
 }
-
