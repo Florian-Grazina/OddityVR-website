@@ -3,7 +3,7 @@ const slogan = document.querySelector("#slogan");
 slogan.style.opacity = "0";
 
 window.onload = () => {
-    setTimeout(DisplaySlogan, 2000)
+    setTimeout(DisplaySlogan, 43000)
 };
 
 function DisplaySlogan(){
