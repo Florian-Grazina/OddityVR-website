@@ -205,14 +205,14 @@ li a:hover{
     margin: auto;
 }
 
-#accueil iframe{
+#accueil embed{
     width: 1350px;
     height: 800px;
     margin: auto;
 }
 
 #slogan{
-    background-color:rgba(0, 0, 0, 0.705);
+    background-color:rgba(0, 0, 0, 0.89);
     width: 100%;
     max-width: 795px;
     height: 400px;
@@ -281,6 +281,40 @@ li a:hover{
     animation-name: girl-float;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+}
+
+
+/***************** softskills **********************/
+
+#table{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+
+.softskill{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 200px;
+    width: 160px;
+}
+
+.softskill img{
+    border-radius: 25px;
+    height: 110px;
+}
+
+.softskill-title{
+    text-align: center;
+    font-size: 22px;
+    font-family: CeraBlack;
+}
+
+.softskill img:hover{
+    background-color: #0e1b5221;
 }
 
 
@@ -401,36 +435,6 @@ li a:hover{
   cursor: pointer;
 }
 
-#table{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-    justify-content: space-between;
-}
-
-.softskill{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    height: 200px;
-    width: 160px;
-}
-
-.softskill img{
-    border-radius: 25px;
-    height: 110px;
-}
-
-.softskill-title{
-    text-align: center;
-    font-size: 22px;
-    font-family: CeraBlack;
-}
-
-.softskill img:hover{
-    background-color: #0e1b5221;
-}
 
 /***************** Team **********************/
 
@@ -748,24 +752,6 @@ footer{
     background-image: url(../assets/Icon\ awesome-tiktok.png);
 }
 
-/***************** Tablet **********************/
-
-
-/* salu lolo */
-@media screen and (max-width: 950px){
-    
-    #container {
-        width: 700px;
-    }
-
-    #black-band{
-        max-width: 750px;
-    }
-
-    .list-document{
-        font-size: 18px;
-    }
-}
 
 /***************** Mobile **********************/
 
