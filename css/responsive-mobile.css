@@ -1,0 +1,211 @@
+/***************** Mobile **********************/
+
+@media screen and (max-width: 700px){
+
+    #container {
+        width: 450px;
+        background-color: rgba(255, 255, 255, 0.151);
+    }
+
+    #black-band{
+        max-width: 520px;
+    }
+
+    #top-band{
+        visibility: hidden;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+    
+
+    /***************** Accueil **********************/
+
+    #slogan{
+        max-width: 450px;
+        height: 400px;
+        padding: 15px;
+    }
+
+    #accueil embed{
+        visibility: collapse;
+        width: 0px;
+    }
+
+    #home-logo{
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    #home-logo img{
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /***************** Presentation **********************/
+    
+    #text-presentation{
+        width: 100%;
+        text-align: center;
+    }
+
+    #text-presentation h2{
+        text-align: center;
+    }
+    
+    #bloc-girl {
+        width: 0%;
+    }
+
+    #blue-bloc-girl {
+        visibility: collapse;
+    }
+
+
+    /***************** modules **********************/
+
+    #bloc-shooter-game
+    {
+        margin: 5px
+    }
+
+    /***************** Results **********************/
+
+    #results-button img{
+        width: 100%;
+    }
+
+
+    /***************** Team **********************/
+
+    .card-container{
+        width: 40%;
+        height: 320px;
+    }
+
+    /***************** Contact **********************/
+
+    #contact-us{
+        text-align: center;
+    }
+
+    #contact-divider{
+        visibility: collapse;
+    }
+
+    /***************** Navbar **********************/
+
+    #navbar-list{
+        visibility: collapse;
+        display: none;
+    }
+
+    #navbar-container{
+        background: transparent;
+    }
+
+    .multicolor-button{
+        display: none;
+    }
+
+    /* Sidenav menu */ 
+
+    #sidenav{
+        margin-bottom: 90px;
+        margin-left: 15px;
+    }
+
+    #sidenav.open{
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+
+    .burger-icon span{
+        margin-left: 100px;
+    }
+
+    .burger-icon span.black {
+        display: block;
+        visibility: visible;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        
+    }
+
+    .burger-icon span.transparent {
+        display: block;
+        visibility: visible;
+        width: 35px;
+        height: 5px;
+        background-color: transparent;
+    }
+
+    #burger {
+        width:30px;
+        height:2px;
+        background:white;
+        display:inline-block;
+        position:relative;
+      }
+    
+    #burger::before,
+    #burger::after {
+      content:'';
+      width:30px;
+      height:2px;
+      background:white;
+      display:inline-block;
+      position:absolute;
+      transform-origin: center;
+      transition: all 0.3s ease;
+    }
+    #burger::before {
+      top:-7px;
+    }
+    #burger::after {
+      top:7px;
+    }
+    
+    #burger.open {
+        background:transparent;
+      }
+      #burger.open ul{
+        display: block;
+      }
+
+      #burger.open::before {
+        transform: rotate(45deg); 
+        top:0;
+      }
+      #burger.open::after {
+        transform: rotate(-45deg);
+        top:0;
+      }
+
+      #burger-list a{
+        color: white;
+        font-family: 'CeraLight', sans-serif;
+      }
+
+      #burger-list.open {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.224);
+        width: 100px;
+        text-align: center;
+        color: white;
+      }
+
+
+
+      
+
+}

@@ -1,0 +1,79 @@
+/* MEUF BONNE */
+@keyframes girl-float{
+	0% {
+		/* filter: drop-shadow( 0 5px 15px 50px rgba(0,0,0,0.6)); */
+        -webkit-filter: drop-shadow(5px 50px 5px rgba(0,0,0,0.6));
+		transform: translatey(0px);
+        scale: 100%;
+	}
+	50% {
+		/* filter: drop-shadow(  0 25px 15px 50px rgba(0,0,0,0.2)); */
+        -webkit-filter: drop-shadow(25px 50px 7px rgba(0,0,0,0.2));
+		/* transform: translatey(-20px); */
+        scale: 110%;
+	}
+	100% {
+		/* filter: drop-shadow(  0 5px 15px 50px rgba(0,0,0,0.6)); */
+        -webkit-filter: drop-shadow(5px 50px 5px rgba(0,0,0,0.6));
+		transform: translatey(0px);
+        scale: 100%;
+	}
+}
+
+
+/* SHOOTER GAME */
+@keyframes ballon-move{
+    from{bottom: -30%;}
+    to{bottom: 100%;}
+}
+
+#balloon1, #balloon5
+{
+    animation-duration: 2s;
+}
+
+#balloon2, #balloon6
+{
+    animation-duration: 3s;
+}
+
+#balloon3
+{
+    animation-duration: 4s;
+}
+
+#balloon4
+{
+    animation-duration: 3.5s;
+}
+
+
+/* ON SCROLL */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-30%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.delay0 {
+    transition-delay: 0ms;
+}
+.delay1 {
+    transition-delay: 200ms;
+}
+.delay2 {
+    transition-delay: 400ms;
+}
+.delay3 {
+    transition-delay: 600ms;
+}
+.delay4 {
+    transition-delay: 800ms;
+}

@@ -1,0 +1,73 @@
+@media screen and (max-width: 950px){
+    
+    #container {
+        width: 700px;
+    }
+
+    #black-band{
+        max-width: 750px;
+    }
+
+
+    /***************** Accueil **********************/
+
+    #slogan{
+        max-width: 680px;
+        padding: 5px;
+    }
+
+    #accueil{
+        height: 500px;
+        margin: auto;
+    }
+
+    #accueil embed{
+        width: 700px;
+        height: 500px;
+        margin: auto;
+    }
+
+
+    /***************** Presentation **********************/
+
+    #blue-bloc-girl {
+        margin-left: -50px;
+        width: 250px;
+        height: 250px;
+    }
+    
+    #metaverse-girl
+    {
+        height: 500px;
+        right: -40px;
+        top: -80px;
+    }
+
+    /***************** softskills **********************/
+
+    .softskill{
+        height: 180px;
+        width: 140px;
+    }
+
+    .softskill-title{
+        font-size: 18px;
+    }
+
+    /***************** modules **********************/
+
+    #bloc-shooter-game
+    {
+        margin: 25px
+    }
+
+    /***************** Results **********************/
+
+    #results-button img{
+        width: 100%;
+    }
+
+    .list-document{
+        font-size: 18px;
+    }
+}
